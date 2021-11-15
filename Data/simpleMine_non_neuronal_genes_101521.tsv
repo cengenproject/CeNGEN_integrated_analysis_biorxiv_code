@@ -1,0 +1,791 @@
+WormBase Gene ID	Public Name	Biotype	Expr_pattern Tissue	Genomic Study Tissue	Putative match?
+WBGene00003925	pas-4	protein_coding_gene	"anal depressor muscle, body wall musculature, pharynx, tail"	"cephalic sheath cell, germ line, germline precursor cell, muscle cell"	Yes?
+WBGene00003926	pas-5	protein_coding_gene	"body wall musculature, distal tip cell, germ line, gonadal sheath cell, hypodermis, somatic gonad, spermatheca, uterus, vulva"	"germ line, germline precursor cell, intestine, muscle cell, somatic gonad precursor"	Yes?
+WBGene00004150	pqn-67	protein_coding_gene	"pharynx, tail"	pharynx	"Yes, but worried about head neurons"
+WBGene00004502	rpt-2	protein_coding_gene	"body wall musculature, gonad, head, intestine, pharynx, reproductive system, uterus, vulva"	"body wall musculature, germ line, intestine, muscle cell, pharynx"	"Yes, but worried about head neurons"
+WBGene00004981	spl-1	protein_coding_gene	"head, intestine"	"germline precursor cell, intestine"	"Yes, but worried about head neurons"
+WBGene00006579	tlk-1	protein_coding_gene	"germ line, head, hypodermis, intestine, pharynx, posterior lateral ganglion, somatic cell, somatic gonad"	germ line	"Yes, but worried about head neurons"
+WBGene00007287	gck-4	protein_coding_gene	"excretory cell, head, intestine, pharynx, tail"	"intestine, somatic gonad precursor"	"Yes, but worried about head neurons"
+WBGene00007811	C29F7.2	protein_coding_gene	"intestine, pharynx"	"head mesodermal cell, hypodermis, intestine, pharyngeal muscle cell"	"Yes, but worried about head neurons"
+WBGene00008093	lron-1	protein_coding_gene	pharynx	"hermaphrodite-specific anatomical entity, pharynx"	"Yes, but worried about head neurons"
+WBGene00009212	atz-1	protein_coding_gene	"hypodermis, pharynx"	"germ line, hypodermis, intestine, pharyngeal muscle cell, pharynx"	"Yes, but worried about head neurons"
+WBGene00009586	F40F9.10	protein_coding_gene	"anal depressor muscle, body wall musculature, pharynx"	"muscle cell, pharynx"	"Yes, but worried about head neurons"
+WBGene00011081	R07B1.9	protein_coding_gene	pharynx	pharynx	"Yes, but worried about head neurons"
+WBGene00011543	acl-2	protein_coding_gene	"body region, body wall musculature, intestine, pharynx"	"EMS, intestine, Psub1"	"Yes, but worried about head neurons"
+WBGene00013976	hizr-1	protein_coding_gene	"head, intestine"	intestine	"Yes, but worried about head neurons"
+WBGene00016499	txt-5	protein_coding_gene	pharynx	head mesodermal cell	"Yes, but worried about head neurons"
+WBGene00017546	rpa-1	protein_coding_gene	"germ line, pharynx"	germ line	"Yes, but worried about head neurons"
+WBGene00018352	fbxc-20	protein_coding_gene	Pharyngeal gland cell	"male, pharynx"	"Yes, but worried about head neurons"
+WBGene00018362	ppm-1.G	protein_coding_gene	"gonad, head, intestine"	"germ line, somatic gonad precursor"	"Yes, but worried about head neurons"
+WBGene00018742	F53B3.3	protein_coding_gene	pharynx	pharynx	"Yes, but worried about head neurons"
+WBGene00019322	ahcy-1	protein_coding_gene	"head, intestine, pharynx"	"intestine, somatic gonad precursor"	"Yes, but worried about head neurons"
+WBGene00019351	lron-7	protein_coding_gene	"head, intestine"	"coelomocyte, head mesodermal cell, intestine"	"Yes, but worried about head neurons"
+WBGene00019477	cest-17	protein_coding_gene	"gonad, intestine, pharynx, somatic gonad"	"intestine, pharynx, somatic gonad precursor"	"Yes, but worried about head neurons"
+WBGene00019751	M03D4.4	protein_coding_gene	pharyngeal muscle cell	"germ line, head mesodermal cell, pharynx"	"Yes, but worried about head neurons"
+WBGene00019760	calu-1	protein_coding_gene	"body wall musculature, hypodermis, intestine, pharynx, rectal epithelium, reproductive system, tail, vulva"	"body wall musculature, hypodermis, intestine, male-specific anatomical entity, muscle cell, pharynx"	"Yes, but worried about head neurons"
+WBGene00020022	gldc-1	protein_coding_gene	"head, hypodermis, intestine"	"germ line, intestine, pharyngeal muscle cell"	"Yes, but worried about head neurons"
+WBGene00020244	T05B4.13	protein_coding_gene	"g1AL, g1AR, g1P, g2L, g2R"	"pharyngeal muscle cell, pharynx"	"Yes, but worried about head neurons"
+WBGene00021088	W08E12.7	protein_coding_gene	"gonad, intestine, pharynx"	"germ line, germline precursor cell, intestine, muscle cell, somatic gonad precursor"	"Yes, but worried about head neurons"
+WBGene00001874	him-17	protein_coding_gene	"anal depressor muscle, body wall musculature, excretory cell, germ line, head, intestine, pharynx, tail"	"germ line, germline precursor cell"	"Yes, but widely expressed makes me nervous"
+WBGene00002992	lin-3	protein_coding_gene	"anchor cell, Cell, excretory canal, F cell, germ line, hypodermal cell, intestinal cell, K cell, pharynx, proctodeum, spermatheca, spermathecal-uterine junction, spermathecal-uterine valve cell, tail, U cell, ventral uterine precursor, vulF"	"germ line, germline precursor cell, head mesodermal cell, hermaphrodite-specific anatomical entity, intestine, pharyngeal muscle cell"	"Yes, but widely expressed makes me nervous"
+WBGene00004461	rpn-5	protein_coding_gene	"anal depressor muscle, body wall musculature, excretory cell, hypodermis, intestine, pharynx, rectal epithelium, rectal gland cell, reproductive system, uterine muscle, vulva"	"body wall musculature, germ line, germline precursor cell, intestine, muscle cell, pharynx, somatic gonad precursor"	"Yes, but widely expressed makes me nervous"
+WBGene00001223	ehn-3	protein_coding_gene	"somatic gonad precursor, Z1, Z4"	somatic gonad precursor	"Yes, but maybe not useful"
+WBGene00001414	fer-1	protein_coding_gene	"male, spermatid, spermatocyte"	"germ line, male"	"Yes, but maybe not useful"
+WBGene00001688	gpr-1	protein_coding_gene	P lineage cell	"germ line, gon_male_dtc anterior, gon_male_dtc posterior, Z1.p, Z4.a"	"Yes, but maybe not useful"
+WBGene00003783	nos-1	protein_coding_gene	"Z2, Z3"	"germ line, germline precursor cell, head mesodermal cell"	"Yes, but maybe not useful"
+WBGene00008202	clec-197	protein_coding_gene	male gonad	"amphid sheath cell, germ line, male, male-specific anatomical entity"	"Yes, but maybe not useful"
+WBGene00016374	swd-2.2	protein_coding_gene	linker cell	"germ line, somatic gonad precursor"	"Yes, but maybe not useful"
+WBGene00018048	clec-137	protein_coding_gene	vas deferens	"male, male-specific anatomical entity"	"Yes, but maybe not useful"
+WBGene00018096	clec-207	protein_coding_gene	vas deferens	"germ line, male"	"Yes, but maybe not useful"
+WBGene00018689	F52D2.7	protein_coding_gene	"Z1, Z4"	"germ line, somatic gonad precursor, Z1, Z4"	"Yes, but maybe not useful"
+WBGene00019584	set-12	protein_coding_gene	"germ line, hypodermis"	"gon_male_dtc anterior, gon_male_dtc posterior, male-specific anatomical entity, Z1, Z1.p, Z4, Z4.a"	"Yes, but maybe not useful"
+WBGene00019856	R03H10.4	protein_coding_gene	seminal vesicle	"germ line, male, male-specific anatomical entity"	"Yes, but maybe not useful"
+WBGene00000007	aat-6	protein_coding_gene	intestine	intestine	Yes
+WBGene00000029	abu-6	protein_coding_gene	pharyngeal muscle cell	pharynx	Yes
+WBGene00000034	abu-11	protein_coding_gene	pharyngeal muscle cell	"pharyngeal muscle cell, pharynx"	Yes
+WBGene00000040	aco-1	protein_coding_gene	"hypodermis, intestine, seam cell"	intestine	Yes
+WBGene00000063	act-1	protein_coding_gene	"body wall musculature, gonad, Psub4, Z2, Z3"	"germ line, muscle cell"	Yes
+WBGene00000080	adr-2	protein_coding_gene	germ line	germ line	Yes
+WBGene00000081	ads-1	protein_coding_gene	intestine	"germ line, head mesodermal cell, intestine"	Yes
+WBGene00000099	air-2	protein_coding_gene	"oocyte, sperm"	"germ line, head mesodermal cell"	Yes
+WBGene00000148	aph-2	protein_coding_gene	oocyte	"AB, germ line, intestine"	Yes
+WBGene00000172	aqp-4	protein_coding_gene	intestine	"head mesodermal cell, intestine"	Yes
+WBGene00000200	arx-2	protein_coding_gene	"anchor cell, apoptotic cell, C. elegans anatomical entity, germ line, head, Q cell, seam cell, socket cell"	germ line	Yes
+WBGene00000214	asp-1	protein_coding_gene	"intestinal cell, intestine"	"head mesodermal cell, intestine, pharyngeal muscle cell"	Yes
+WBGene00000253	bli-3	protein_coding_gene	hypodermis	"hypodermis, somatic gonad precursor"	Yes
+WBGene00000264	brc-1	protein_coding_gene	germ line	"germ line, gon_male_dtc anterior, gon_male_dtc posterior, Z1.p, Z4.a"	Yes
+WBGene00000265	brd-1	protein_coding_gene	germ line	"germ line, gon_male_dtc anterior, gon_male_dtc posterior, head mesodermal cell, Z1.p, Z4.a"	Yes
+WBGene00000372	cyp-13A7	protein_coding_gene	intestine	intestine	Yes
+WBGene00000386	cdc-25.1	protein_coding_gene	"embryonic cell, germ line, oocyte, sperm, Z2, Z3"	"cephalic sheath cell, germ line, germline precursor cell, intestine, somatic gonad precursor"	Yes
+WBGene00000411	cdl-1	protein_coding_gene	"Cell, germ line"	"germ line, somatic gonad precursor"	Yes
+WBGene00000413	cdt-1	protein_coding_gene	"anchor cell, germ line, vulD"	"germ line, gon_male_dtc anterior, gon_male_dtc posterior, somatic gonad precursor, Z1.p, Z4.a"	Yes
+WBGene00000423	ced-9	protein_coding_gene	"Cell, gonad"	germ line	Yes
+WBGene00000425	ced-11	protein_coding_gene	"apoptotic cell, head, hypodermis, tail"	"hypodermis, muscle cell"	Yes
+WBGene00000498	chk-1	protein_coding_gene	germ line	"germ line, gon_male_dtc anterior, gon_male_dtc posterior, Z1.p, Z4.a"	Yes
+WBGene00000503	cht-1	protein_coding_gene	gonad	"AB, germ line"	Yes
+WBGene00000539	cln-3.1	protein_coding_gene	"cuticle, diagonal muscle, hypodermis, int2D, int2V, int3D embryonic, int3V embryonic, int4D embryonic, int4V embryonic, int5L embryonic, int5R embryonic, int6L embryonic, int6R embryonic, int7L embryonic, int7R embryonic, int8L embryonic, int8R embryonic, intestinal muscle, intestine, pharynx"	"body wall musculature, intestine, pharynx"	Yes
+WBGene00000543	clp-2	protein_coding_gene	"head, hypodermis, intestinal cell, intestine, muscle cell, tail"	"germ line, intestine"	Yes
+WBGene00000695	col-121	protein_coding_gene	hyp7 syncytium	hypodermis	Yes
+WBGene00000717	col-144	protein_coding_gene	hypodermis	hypodermis	Yes
+WBGene00000795	crn-2	protein_coding_gene	"head, intestine, tail"	"germ line, intestine, somatic gonad precursor"	Yes
+WBGene00000804	csc-1	protein_coding_gene	oocyte	"germ line, gon_male_dtc anterior, gon_male_dtc posterior, head mesodermal cell, seam cell, Z1.p, Z4.a"	Yes
+WBGene00000814	csn-2	protein_coding_gene	"head, pharynx"	"body wall muscle cell, germ line, intestine, muscle cell, somatic gonad precursor"	Yes
+WBGene00000839	cul-4	protein_coding_gene	"embryonic cell, germ line, gonad, intestine, oocyte"	germ line	Yes
+WBGene00000865	cyb-1	protein_coding_gene	"germ cell, male gonad, oocyte"	"CEPshDL, CEPshDR, CEPshVL, CEPshVR, germ line, somatic gonad precursor"	Yes
+WBGene00000866	cyb-2.1	protein_coding_gene	germ line	"cephalic sheath cell, germ line, germline precursor cell, head mesodermal cell, pharyngeal muscle cell"	Yes
+WBGene00000930	dao-4	protein_coding_gene	"hyp7 syncytium, seam cell"	"amphid sheath cell, hypodermis"	Yes
+WBGene00000967	dhs-3	protein_coding_gene	intestinal cell	"head mesodermal cell, intestine"	Yes
+WBGene00000996	dif-1	protein_coding_gene	"hypodermis, intestine"	"germ line, intestine, muscle cell, somatic gonad precursor"	Yes
+WBGene00001000	dim-1	protein_coding_gene	body wall musculature	"body wall musculature, germ line, muscle cell"	Yes
+WBGene00001002	div-1	protein_coding_gene	"distal tip cell, gonadal sheath cell, pharynx, somatic gonad, spermatheca, vulva, vulval precursor cell"	germ line	Yes
+WBGene00001016	dna-2	protein_coding_gene	"gonad, oocyte, spermatheca, uterus"	"germ line, germline precursor cell, gon_male_dtc anterior, gon_male_dtc posterior, hypodermis, Z1.p, Z4.a"	Yes
+WBGene00001028	dnj-10	protein_coding_gene	"head, intestine, pharynx, tail"	"body wall muscle cell, germ line, intestine"	Yes
+WBGene00001046	dnj-28	protein_coding_gene	"head, hypodermis, intestine, tail"	"germ line, germline precursor cell, head mesodermal cell, hypodermis, intestine"	Yes
+WBGene00001069	dpy-7	protein_coding_gene	"cuticle, hyp10, hyp5, hyp6, hyp7 syncytium, hypodermis, P1, P10, P11, P12, P2, P3, P4, P5, P6, P7, P8, P9, seam cell"	"hypodermis, intestine, male-specific anatomical entity"	Yes
+WBGene00001087	dpy-28	protein_coding_gene	germ line	"germ line, somatic gonad precursor"	Yes
+WBGene00001099	dsc-4	protein_coding_gene	intestine	"head mesodermal cell, intestine, pharyngeal muscle cell"	Yes
+WBGene00001153	ech-4	protein_coding_gene	"hypodermis, intestine"	"intestine, muscle cell, pharynx"	Yes
+WBGene00001214	ego-1	protein_coding_gene	germ line	"germ line, germline precursor cell"	Yes
+WBGene00001236	elc-1	protein_coding_gene	"hypodermis, intestine, pharynx, vulval muscle"	intestine	Yes
+WBGene00001239	elo-1	protein_coding_gene	"anal depressor muscle, body wall musculature, hypodermis, intestine, mu_int_L, mu_int_R, pharynx, rectal gland cell"	"germline precursor cell, intestine, somatic gonad precursor"	Yes
+WBGene00001328	epi-1	protein_coding_gene	"anal depressor muscle, basal lamina, body wall musculature, Cell, gonad, intestine, vulva, vulval muscle"	"body wall muscle cell, body wall musculature, head mesodermal cell, muscle cell"	Yes
+WBGene00001398	fat-6	protein_coding_gene	"hypodermis, intestine"	"intestine, pharyngeal muscle cell"	Yes
+WBGene00001399	fat-7	protein_coding_gene	intestine	intestine	Yes
+WBGene00001401	fbf-1	protein_coding_gene	germ line	"germ line, germline precursor cell, head mesodermal cell, hermaphrodite-specific anatomical entity"	Yes
+WBGene00001402	fbf-2	protein_coding_gene	germ line	"germ line, germline precursor cell, Psub1"	Yes
+WBGene00001413	fem-3	protein_coding_gene	"germ line, male, spermatid"	"cephalic sheath cell, germ line, germline precursor cell, gon_male_dtc anterior, gon_male_dtc posterior, head mesodermal cell, Z1.p, Z4.a"	Yes
+WBGene00001430	fkb-5	protein_coding_gene	hypodermis	"germ line, head mesodermal cell, hypodermis, male-specific anatomical entity, muscle cell"	Yes
+WBGene00001438	fkh-6	protein_coding_gene	"gonad, gonadal sheath cell, hermaphrodite, male, male gonad, somatic gonad precursor, spermatheca, Z1, Z4"	"germ line, gon_male_dtc anterior, gon_male_dtc posterior, male-specific anatomical entity, somatic gonad precursor, Z1, Z1.p, Z4, Z4.a"	Yes
+WBGene00001465	flr-1	protein_coding_gene	intestine	intestine	Yes
+WBGene00001481	fog-1	protein_coding_gene	germ line	"germ line, germline precursor cell, head mesodermal cell"	Yes
+WBGene00001483	fog-3	protein_coding_gene	germ line	"germ line, germline precursor cell, male"	Yes
+WBGene00001506	fut-2	protein_coding_gene	intestinal cell	"head mesodermal cell, intestine"	Yes
+WBGene00001511	fzy-1	protein_coding_gene	germ cell	"germ line, hypodermis"	Yes
+WBGene00001513	gad-1	protein_coding_gene	germ line	"germ line, germline precursor cell"	Yes
+WBGene00001569	meg-3	protein_coding_gene	"Cell, germ cell, oocyte"	"germ line, hypodermis, pharyngeal muscle cell, Z1, Z4"	Yes
+WBGene00001578	ges-1	protein_coding_gene	"intestine, pharynx"	"head mesodermal cell, intestine, pharyngeal muscle cell"	Yes
+WBGene00001583	gfi-3	protein_coding_gene	"germ line, intestine, sperm"	"germ line, hypodermis, intestine"	Yes
+WBGene00001599	glh-2	protein_coding_gene	"germ line, gonad"	"germ line, germline precursor cell, head mesodermal cell"	Yes
+WBGene00001600	glh-3	protein_coding_gene	gonad	"germ line, germline precursor cell, head mesodermal cell"	Yes
+WBGene00001603	gln-2	protein_coding_gene	germ line	"germ line, male"	Yes
+WBGene00001625	glt-7	protein_coding_gene	excretory canal	"excretory cell, somatic gonad precursor"	Yes
+WBGene00001644	gly-19	protein_coding_gene	"anal sphincter muscle, intestine"	"head mesodermal cell, intestine"	Yes
+WBGene00001683	gpd-1	protein_coding_gene	germ line	"germ line, germline precursor cell"	Yes
+WBGene00001686	gpd-4	protein_coding_gene	germ line	"germ line, germline precursor cell"	Yes
+WBGene00001701	grd-12	protein_coding_gene	"head, hypodermis, intestine, rectal epithelium, reproductive system, tail, vulC, vulva"	"intestine, somatic gonad precursor"	Yes
+WBGene00001730	grl-21	protein_coding_gene	"arcade cell, hypodermis"	"germline precursor cell, hermaphrodite-specific anatomical entity, hypodermis"	Yes
+WBGene00001813	haf-3	protein_coding_gene	"intestine, spermatheca"	"germ line, germline precursor cell, intestine"	Yes
+WBGene00001814	haf-4	protein_coding_gene	intestine	"head mesodermal cell, intestine"	Yes
+WBGene00001828	hch-1	protein_coding_gene	"hypodermis, seam cell"	"germ line, hypodermis"	Yes
+WBGene00001862	him-3	protein_coding_gene	"oocyte, spermatocyte"	"germ line, germline precursor cell, head mesodermal cell, hypodermis, pharyngeal muscle cell"	Yes
+WBGene00001864	him-5	protein_coding_gene	gonad	"germ line, germline precursor cell, head mesodermal cell"	Yes
+WBGene00001872	him-14	protein_coding_gene	"embryonic cell, gonad"	"germ line, head mesodermal cell, Psub1"	Yes
+WBGene00001952	hlh-6	protein_coding_gene	Pharyngeal gland cell	pharynx	Yes
+WBGene00001973	hmg-3	protein_coding_gene	"germ line, gonad"	"germ line, germline precursor cell, head mesodermal cell, hypodermis, pharyngeal muscle cell"	Yes
+WBGene00001984	hog-1	protein_coding_gene	rectal epithelium	"germline precursor cell, hypodermis, somatic gonad precursor"	Yes
+WBGene00002044	hyl-2	protein_coding_gene	"head, hypodermis, intestine, tail, terminal bulb"	intestine	Yes
+WBGene00002054	ifb-2	protein_coding_gene	intestine	"body wall musculature, germ line, head mesodermal cell, intestine, pharyngeal muscle cell"	Yes
+WBGene00002057	ifd-1	protein_coding_gene	intestine	"germ line, head mesodermal cell, intestine, pharyngeal muscle cell"	Yes
+WBGene00002059	ife-1	protein_coding_gene	"germ line, gonad, oocyte, primary spermatocyte, secondary spermatocyte"	"germ line, germline precursor cell, intestine, muscle cell, somatic gonad precursor"	Yes
+WBGene00002064	iff-1	protein_coding_gene	"germ line, gonad"	"germ line, germline precursor cell, intestine"	Yes
+WBGene00002068	ify-1	protein_coding_gene	"germ cell, germ line"	"germ line, germline precursor cell, male-specific anatomical entity"	Yes
+WBGene00002110	ins-27	protein_coding_gene	"body wall musculature, distal tip cell, head muscle, hypodermis, intestinal muscle, vulval muscle"	"body wall muscle cell, head mesodermal cell"	Yes
+WBGene00002200	kin-16	protein_coding_gene	"hyp6, hyp7 syncytium"	hypodermis	Yes
+WBGene00002225	klp-15	protein_coding_gene	"germ line, hypodermis"	"germ line, germline precursor cell, head mesodermal cell"	Yes
+WBGene00002226	klp-16	protein_coding_gene	"AB, ABa, ABp, EMS, germ line, head, P0, Psub1, Psub2"	"germ line, germline precursor cell"	Yes
+WBGene00002228	klp-18	protein_coding_gene	"germ line, Z2, Z3"	"germ line, germline precursor cell, head mesodermal cell"	Yes
+WBGene00002229	klp-19	protein_coding_gene	germ line	germ line	Yes
+WBGene00002244	laf-1	protein_coding_gene	germ line	germ line	Yes
+WBGene00002247	lam-1	protein_coding_gene	"intestine, pharynx"	"body wall muscle cell, head mesodermal cell, intestine, pharynx"	Yes
+WBGene00002497	let-268	protein_coding_gene	"body wall musculature, GLR"	"body wall muscle cell, germ line, head mesodermal cell, hermaphrodite-specific anatomical entity, muscle cell"	Yes
+WBGene00003036	lin-53	protein_coding_gene	"Cell, germ cell, head, hypodermis, P3.p hermaphrodite, P4.p hermaphrodite, P5.p hermaphrodite, P6.p hermaphrodite, P7.p hermaphrodite, P8.p hermaphrodite, tail"	"germ line, somatic gonad precursor"	Yes
+WBGene00003055	lon-1	protein_coding_gene	"head, hypodermis, intestinal cell, intestine, tail"	"hypodermis, intestine, somatic gonad precursor"	Yes
+WBGene00003155	mcm-3	protein_coding_gene	germ line	"germ line, head mesodermal cell"	Yes
+WBGene00003161	mdf-2	protein_coding_gene	germ line	"germ line, head mesodermal cell"	Yes
+WBGene00003214	mel-32	protein_coding_gene	"hypodermis, intestine, seam cell"	"germline precursor cell, intestine, somatic gonad precursor"	Yes
+WBGene00003220	mes-2	protein_coding_gene	"germ line, hypodermis, intestine, Z2, Z3"	"germ line, germline precursor cell"	Yes
+WBGene00003222	mes-4	protein_coding_gene	"germ line, hypodermis, Z2, Z3"	"germ line, gon_male_dtc anterior, gon_male_dtc posterior, hypodermis, somatic gonad precursor, Z1.p, Z4.a"	Yes
+WBGene00003224	mes-6	protein_coding_gene	"germ line, intestinal cell, oocyte, reproductive system, spermatheca, Z2, Z3"	germ line	Yes
+WBGene00003228	mex-1	protein_coding_gene	"C, D, EMS, germ line, gonad, oocyte, P0, Psub1, Psub2, Psub3, Psub4"	"germ line, germline precursor cell, head mesodermal cell"	Yes
+WBGene00003229	mex-3	protein_coding_gene	"AB, ABa, ABp, distal tip cell, embryonic cell, EMS, germ line, oocyte, P0, Psub1, Psub2, Psub3, Psub4"	"AB, germ line, somatic gonad precursor"	Yes
+WBGene00003235	mif-2	protein_coding_gene	"body wall musculature, hypodermis, vulval muscle"	"hypodermis, intestine"	Yes
+WBGene00003253	mig-22	protein_coding_gene	"anterior distal tip cell, oocyte, pharynx, posterior distal tip cell, seam cell, vulva"	"coelomocyte, germ line"	Yes
+WBGene00003258	cogc-1	protein_coding_gene	germ line	germ line	Yes
+WBGene00003369	mlc-1	protein_coding_gene	"anal depressor muscle, body wall musculature, pharyngeal muscle cell, pharynx, vulval muscle"	"body wall muscle cell, intestine, muscle cell"	Yes
+WBGene00003370	mlc-2	protein_coding_gene	"body wall musculature, pharyngeal muscle cell, pharynx, vulval muscle"	"body wall musculature, head mesodermal cell, intestine, muscle cell, Psub1"	Yes
+WBGene00003410	mrp-4	protein_coding_gene	intestine	"germ line, hypodermis, intestine, pharyngeal muscle cell"	Yes
+WBGene00003424	msp-3	protein_coding_gene	"hermaphrodite gonad, linker cell, male gonad, oocyte, sperm, spermatheca, spermatid, spermatocyte, uterus"	"amphid sheath cell, germ line, male, male-specific anatomical entity"	Yes
+WBGene00003425	msp-10	protein_coding_gene	"hermaphrodite gonad, male gonad, oocyte, sperm, spermatheca, uterus"	"amphid sheath cell, germ line, male-specific anatomical entity"	Yes
+WBGene00003426	msp-19	protein_coding_gene	"hermaphrodite gonad, male gonad, oocyte, sperm, spermatheca, uterus"	"amphid sheath cell, germ line, male"	Yes
+WBGene00003429	msp-31	protein_coding_gene	"hermaphrodite gonad, male gonad, oocyte, sperm, spermatheca, uterus"	"amphid sheath cell, germ line, male, male-specific anatomical entity, seam cell"	Yes
+WBGene00003430	msp-32	protein_coding_gene	"hermaphrodite gonad, male gonad, oocyte, sperm, spermatheca, uterus"	germ line	Yes
+WBGene00003431	msp-33	protein_coding_gene	"hermaphrodite gonad, male gonad, oocyte, sperm, spermatheca, uterus"	"amphid sheath cell, germ line, intestine, male, male-specific anatomical entity"	Yes
+WBGene00003432	msp-36	protein_coding_gene	"hermaphrodite gonad, male gonad, oocyte, sperm, spermatheca, uterus"	"amphid sheath cell, germ line, male, male-specific anatomical entity"	Yes
+WBGene00003434	msp-38	protein_coding_gene	"hermaphrodite gonad, male gonad, oocyte, sperm, spermatheca, uterus"	"amphid sheath cell, germ line"	Yes
+WBGene00003435	msp-40	protein_coding_gene	"hermaphrodite gonad, male gonad, oocyte, sperm, spermatheca, uterus"	"amphid sheath cell, hypodermis, male, male-specific anatomical entity"	Yes
+WBGene00003437	msp-42	pseudogene	"hermaphrodite gonad, male gonad, oocyte, sperm, spermatheca, uterus"	male	Yes
+WBGene00003442	msp-49	protein_coding_gene	"hermaphrodite gonad, male gonad, oocyte, sperm, spermatheca, uterus"	"amphid sheath cell, arcade cell, germ line, male, pharyngeal-intestinal valve cell"	Yes
+WBGene00003443	msp-50	protein_coding_gene	"hermaphrodite gonad, male gonad, oocyte, sperm, spermatheca, uterus"	"amphid sheath cell, germ line, male, male-specific anatomical entity"	Yes
+WBGene00003449	msp-56	protein_coding_gene	"hermaphrodite gonad, male gonad, oocyte, sperm, spermatheca, uterus"	"germ line, male-specific anatomical entity"	Yes
+WBGene00003507	mut-14	protein_coding_gene	"germ cell, germ line"	"germ line, germline precursor cell, gon_male_dtc anterior, gon_male_dtc posterior, somatic gonad precursor, Z1, Z1.p, Z4, Z4.a"	Yes
+WBGene00003508	mut-16	protein_coding_gene	"Cell, germ cell, germ line, somatic cell"	germ line	Yes
+WBGene00003528	nas-9	protein_coding_gene	"hyp7 syncytium, hypodermis, spermatheca, uterus"	"hypodermis, muscle cell"	Yes
+WBGene00003552	nas-36	protein_coding_gene	"hyp1, hyp10, hyp11, hyp12, hyp2, hyp3, hyp4, hyp5, hyp6, hyp7 syncytium, hyp8, hyp9, seam cell, vulva"	hypodermis	Yes
+WBGene00003567	ncx-2	protein_coding_gene	"body wall musculature, intestinal muscle, isthmus, metacorpus, pharyngeal muscle cell, procorpus, terminal bulb, vulval muscle"	"body wall musculature, muscle cell, pharynx"	Yes
+WBGene00003577	ndg-4	protein_coding_gene	"hyp1, hyp10, hyp11, hyp12, hyp2, hyp3, hyp4, hyp5, hyp6, hyp7 syncytium, hyp8, hyp9, intestine"	intestine	Yes
+WBGene00003612	nhr-13	protein_coding_gene	intestine	"germ line, intestine, muscle cell, somatic gonad precursor"	Yes
+WBGene00003628	nhr-35	protein_coding_gene	intestine	"intestine, somatic gonad precursor"	Yes
+WBGene00003704	nhr-114	protein_coding_gene	"germ line, hypodermis, intestine"	"intestine, Psub1, somatic gonad precursor"	Yes
+WBGene00003717	nhr-127	protein_coding_gene	seam cell	hypodermis	Yes
+WBGene00003730	nhx-2	protein_coding_gene	intestine	"head mesodermal cell, intestine, pharyngeal muscle cell"	Yes
+WBGene00003785	nos-3	protein_coding_gene	"germ line, Psub1, Psub2, Psub3, Psub4, Z2, Z3"	germ line	Yes
+WBGene00003845	odd-1	protein_coding_gene	"Ealaa, Earaa, Eplpp, Eprpp, int2D, int2V, int3D embryonic, int3V embryonic, int4D embryonic, int4V embryonic, int5L embryonic, int5R embryonic, int6L embryonic, int6R embryonic, int7L embryonic, int7R embryonic, intestine"	intestine	Yes
+WBGene00003887	osm-7	protein_coding_gene	hypodermis	"germline precursor cell, hypodermis, somatic gonad precursor"	Yes
+WBGene00003933	pat-9	protein_coding_gene	"body wall musculature, gonad"	"body wall muscle cell, hypodermis, muscle cell"	Yes
+WBGene00003939	pax-3	protein_coding_gene	"AB lineage cell, E lineage cell, Earp, embryonic cell, Eprp, hermaphrodite gonad, hyp4, hyp6, hyp7 syncytium, P1, P1/2L, P10, P2, P3/4L, P5, P5/6L, P6, P7, P7/8L, P8, P9, P9/10L, PHBL, PVQL, sex myoblast, tail, TL, V3L, vulF"	hypodermis	Yes
+WBGene00003943	pbo-4	protein_coding_gene	intestine	"head mesodermal cell, intestine"	Yes
+WBGene00003955	pcn-1	protein_coding_gene	germ line	"germ line, intestine"	Yes
+WBGene00003956	pcp-1	protein_coding_gene	intestine	"head mesodermal cell, intestine"	Yes
+WBGene00003960	pcs-1	protein_coding_gene	"anal sphincter muscle, body wall musculature, coelomocyte, hypodermis, pharyngeal-intestinal valve, pharynx, rectal valve cell, virL, virR, vulval muscle"	"body wall muscle cell, germ line, germline precursor cell, intestine, muscle cell"	Yes
+WBGene00003982	pes-9	protein_coding_gene	"hypodermis, intestine"	intestine	Yes
+WBGene00003991	pfn-3	protein_coding_gene	"body wall musculature, intestine, rectal gland cell"	"body wall muscle cell, head mesodermal cell, muscle cell"	Yes
+WBGene00003993	pgl-2	protein_coding_gene	germ line	"germ line, germline precursor cell"	Yes
+WBGene00003999	pgp-5	protein_coding_gene	intestine	"intestine, male-specific anatomical entity"	Yes
+WBGene00004004	pgp-10	protein_coding_gene	"hypodermis, intestine"	"germ line, hypodermis, male-specific anatomical entity"	Yes
+WBGene00004016	phf-5	protein_coding_gene	"body wall musculature, intestine, pharyngeal muscle cell, pharynx, rectal muscle"	"germ line, intestine, muscle cell"	Yes
+WBGene00004026	phy-3	protein_coding_gene	spermatheca	germ line	Yes
+WBGene00004042	plk-1	protein_coding_gene	"AB, embryonic cell, germ line, oocyte"	germ line	Yes
+WBGene00004043	plk-2	protein_coding_gene	germ line	"germ line, germline precursor cell, head mesodermal cell"	Yes
+WBGene00004113	pqn-24	protein_coding_gene	head muscle	"head mesodermal cell, muscle cell"	Yes
+WBGene00004141	pqn-57	protein_coding_gene	"pharyngeal muscle cell, rectum"	pharynx	Yes
+WBGene00004178	prg-1	protein_coding_gene	germ line	"body wall muscle cell, germ line, germline precursor cell, intestine"	Yes
+WBGene00004196	prx-11	protein_coding_gene	"body region, head mesodermal cell, hypodermis, intestine, rectal gland cell"	"body wall musculature, intestine, pharynx, somatic gonad precursor, Z1, Z4"	Yes
+WBGene00004221	ptr-6	protein_coding_gene	"anterior hypodermis, hypodermis"	"germline precursor cell, head mesodermal cell, hypodermis, male-specific anatomical entity"	Yes
+WBGene00004239	puf-3	protein_coding_gene	germ line	"germ line, germline precursor cell, Psub1, Psub3"	Yes
+WBGene00004259	pyr-1	protein_coding_gene	intestine	"germ line, gon_male_dtc anterior, gon_male_dtc posterior, intestine, somatic gonad precursor, Z1.p, Z4.a"	Yes
+WBGene00004297	rad-51	protein_coding_gene	gonad	"germ line, germline precursor cell, gon_male_dtc anterior, gon_male_dtc posterior, head mesodermal cell, Z1.p, Z4.a"	Yes
+WBGene00004333	rec-8	protein_coding_gene	"embryonic cell, gonad, Z2, Z3"	"germ line, germline precursor cell, head mesodermal cell, hypodermis, pharyngeal muscle cell"	Yes
+WBGene00004343	rgr-1	protein_coding_gene	"germ line, hypodermis, intestine, pharynx"	germ line	Yes
+WBGene00004355	rha-1	protein_coding_gene	"germ line, oocyte"	germ line	Yes
+WBGene00004374	rme-2	protein_coding_gene	"germ cell, germ line, gonad, oocyte"	"germ line, germline precursor cell, head mesodermal cell, pharyngeal muscle cell, Psub1"	Yes
+WBGene00004726	sas-4	protein_coding_gene	"gonad, intestinal cell, sperm"	"germ line, intestine"	Yes
+WBGene00004738	scc-3	protein_coding_gene	gonad	germ line	Yes
+WBGene00004747	sdc-3	protein_coding_gene	"germ line, oocyte"	"germ line, gon_male_dtc anterior, gon_male_dtc posterior, Z1.p, Z4.a"	Yes
+WBGene00004796	sid-2	protein_coding_gene	"Excretory duct, intestine"	"head mesodermal cell, intestine"	Yes
+WBGene00004953	spd-2	protein_coding_gene	"germ line, gonad, intestinal cell"	"germ line, germline precursor cell, intestine"	Yes
+WBGene00004962	spe-8	protein_coding_gene	"sperm, spermatocyte"	"germ line, male"	Yes
+WBGene00004964	spe-10	protein_coding_gene	spermatid	"germ line, male"	Yes
+WBGene00004966	spe-12	protein_coding_gene	"male, spermatid"	"hypodermis, male"	Yes
+WBGene00004972	spe-26	protein_coding_gene	"male, spermatocyte"	"germ line, male"	Yes
+WBGene00004973	spe-27	protein_coding_gene	"male, sperm, spermatocyte"	"male, male-specific anatomical entity"	Yes
+WBGene00004975	spe-39	protein_coding_gene	"male, male-specific anatomical entity"	"coelomocyte, germ line"	Yes
+WBGene00004976	spe-41	protein_coding_gene	"sperm, spermatid"	"germ line, germline precursor cell, male"	Yes
+WBGene00006047	ssp-19	protein_coding_gene	spermatheca	"amphid sheath cell, germ line"	Yes
+WBGene00006311	sun-1	protein_coding_gene	"AB, ABa, ABal, ABala, ABalaa, ABalap, ABalp, ABalpa, ABalpp, ABar, ABara, ABaraa, ABarap, ABarp, ABarpa, ABarpp, ABp, ABpl, ABpla, ABplaa, ABplap, ABplp, ABplpa, ABplpp, ABpr, ABpra, ABpraa, ABprap, ABprp, ABprpa, ABprpp, C, Ca, Caa, Cap, Cp, Cpa, Cpp, D, E, Ea, EMS, Ep, germ line, MS, MSa, MSaa, MSap, MSp, MSpa, MSpp, P0, Psub1, Psub2, Psub3, Psub4, Z2, Z3"	"germ line, germline precursor cell, head mesodermal cell"	Yes
+WBGene00006374	syx-4	protein_coding_gene	"gonad, seam cell"	"arcade cell, germ line, germline precursor cell, head mesodermal cell, pharyngeal-intestinal valve cell"	Yes
+WBGene00006375	syp-1	protein_coding_gene	"germ line, gonad"	"germ line, germline precursor cell, head mesodermal cell"	Yes
+WBGene00006379	sys-1	protein_coding_gene	"ABplpapaap, ABprpapaap, hyp11, hyp8, P7.pa, P7.pp, posterior distal tip cell, Z1.aa"	"germ line, gon_male_dtc anterior, gon_male_dtc posterior, somatic gonad precursor, Z1.p, Z4.a"	Yes
+WBGene00006408	tag-18	protein_coding_gene	"anal depressor muscle, body wall musculature, reproductive system, vulval muscle"	"body wall muscle cell, body wall musculature, germ line, intestine, muscle cell"	Yes
+WBGene00006454	aex-4	protein_coding_gene	intestine	"head mesodermal cell, intestine"	Yes
+WBGene00006464	bath-47	protein_coding_gene	"head, intestine"	"head mesodermal cell, intestine"	Yes
+WBGene00006489	zhit-3	protein_coding_gene	"germ line, hypodermis"	"germ line, germline precursor cell, hypodermis, intestine"	Yes
+WBGene00006540	tbg-1	protein_coding_gene	gonad	"germ line, germline precursor cell, somatic gonad precursor"	Yes
+WBGene00006542	tbp-1	protein_coding_gene	gonad	"germ line, somatic gonad precursor"	Yes
+WBGene00006587	tnt-2	protein_coding_gene	"anal depressor muscle, body wall musculature, mu_int_L, mu_int_R, reproductive system, vulval muscle"	"body wall muscle cell, body wall musculature, muscle cell"	Yes
+WBGene00006596	top-3	protein_coding_gene	gonad	"germ line, germline precursor cell, somatic gonad precursor"	Yes
+WBGene00006619	try-1	protein_coding_gene	germ line	germ line	Yes
+WBGene00006672	twk-18	protein_coding_gene	body wall musculature	"body wall muscle cell, body wall musculature, head mesodermal cell, muscle cell"	Yes
+WBGene00006688	twk-36	protein_coding_gene	excretory cell	excretory cell	Yes
+WBGene00006754	unc-15	protein_coding_gene	"anal depressor muscle, anal sphincter muscle, anterior oblique muscle, body wall musculature, copulatory spicule, diagonal muscle, gonad, gubernacular erector muscle, gubernacular retractor muscle, intestinal muscle, longitudinal male muscle, male, pharyngeal muscle cell, posterior oblique muscle, spicule protractor muscle, spicule retractor muscle, vulval muscle"	"body wall muscle cell, body wall musculature, muscle cell"	Yes
+WBGene00006764	unc-27	protein_coding_gene	"anal depressor muscle, anal sphincter muscle, anterior gonadal sheath cell, body wall musculature, diagonal muscle, head muscle, longitudinal male muscle, pharyngeal muscle cell, rectal muscle, vulval muscle"	"body wall muscle cell, body wall musculature, muscle cell"	Yes
+WBGene00006822	unc-93	protein_coding_gene	"body wall musculature, intestinal muscle, SIADL, SIADR, SIAVL, SIAVR, vulval muscle"	"body wall muscle cell, head mesodermal cell, muscle cell"	Yes
+WBGene00006856	usp-14	protein_coding_gene	germ line	"germ line, germline precursor cell"	Yes
+WBGene00006886	vap-1	protein_coding_gene	amphid sheath cell	amphid sheath cell	Yes
+WBGene00006916	vha-7	protein_coding_gene	"gonad, hypodermis, oocyte, spermatheca, uterus"	"germ line, germline precursor cell, hypodermis, Psub1"	Yes
+WBGene00006944	wrn-1	protein_coding_gene	"germ line, hypodermis, intestinal cell"	"germ line, germline precursor cell"	Yes
+WBGene00006955	wrt-9	protein_coding_gene	hypodermis	"germline precursor cell, hypodermis"	Yes
+WBGene00007024	plin-1	protein_coding_gene	"germ line, hypodermal cell, intestinal cell"	"germ line, germline precursor cell, muscle cell, somatic gonad precursor"	Yes
+WBGene00007117	spe-42	protein_coding_gene	sperm	"germ line, male"	Yes
+WBGene00007228	acs-7	protein_coding_gene	intestinal cell	"head mesodermal cell, intestine, Psub1"	Yes
+WBGene00007262	jud-4	protein_coding_gene	"hypodermis, vulval muscle"	"hypodermis, somatic gonad precursor, Z1, Z4"	Yes
+WBGene00007270	rei-1	protein_coding_gene	germ line	"germ line, germline precursor cell, somatic gonad precursor"	Yes
+WBGene00007307	spch-1	protein_coding_gene	sperm	"amphid sheath cell, germ line, male, somatic gonad precursor"	Yes
+WBGene00007332	C05C10.5	protein_coding_gene	germ line	"germ line, germline precursor cell"	Yes
+WBGene00007443	pfd-1	protein_coding_gene	"body wall musculature, excretory cell, head muscle, intestine, pharyngeal muscle cell, pharynx, vulval muscle"	"body wall musculature, germ line, intestine"	Yes
+WBGene00007615	set-31	protein_coding_gene	"germ line, hypodermis"	"arcade cell, body wall muscle cell, germ line, pharyngeal-intestinal valve cell"	Yes
+WBGene00007624	hrde-1	protein_coding_gene	"germ cell, germ line"	"germ line, germline precursor cell, head mesodermal cell"	Yes
+WBGene00007640	pcmd-1	protein_coding_gene	germ line	"germ line, somatic gonad precursor"	Yes
+WBGene00007680	maa-1	protein_coding_gene	"hypodermis, intestine"	"intestine, muscle cell, pharyngeal muscle cell, somatic gonad precursor"	Yes
+WBGene00007732	spe-44	protein_coding_gene	"germ line, hermaphrodite, male, sperm"	"germ line, germline precursor cell, head mesodermal cell"	Yes
+WBGene00007733	smz-1	protein_coding_gene	"male gonad, sperm"	"germ line, hypodermis, male"	Yes
+WBGene00007773	C27C12.3	protein_coding_gene	germ line	"germ line, germline precursor cell, hermaphrodite-specific anatomical entity, muscle cell"	Yes
+WBGene00007784	ruvb-1	protein_coding_gene	"gonad, pharyngeal cell"	"germ line, somatic gonad precursor"	Yes
+WBGene00007917	chdh-1	protein_coding_gene	gonad	"body wall muscle cell, germ line, germline precursor cell, head mesodermal cell"	Yes
+WBGene00007975	gls-1	protein_coding_gene	germ line	"CEPshDL, CEPshDR, CEPshVL, CEPshVR, germ line"	Yes
+WBGene00008062	set-32	protein_coding_gene	germ line	"germ line, germline precursor cell, gon_male_dtc anterior, gon_male_dtc posterior, head mesodermal cell, hermaphrodite-specific anatomical entity, Z1.p, Z4.a"	Yes
+WBGene00008085	smcl-1	protein_coding_gene	germ line	germ line	Yes
+WBGene00008127	ddo-1	protein_coding_gene	"head, hypodermis, intestinal cell"	intestine	Yes
+WBGene00008145	set-5	protein_coding_gene	germ line	"germ line, germline precursor cell, head mesodermal cell"	Yes
+WBGene00008220	C50B6.7	protein_coding_gene	intestine	"head mesodermal cell, intestine"	Yes
+WBGene00008412	D2030.2	protein_coding_gene	"intestine, rectal gland cell"	"head mesodermal cell, intestine"	Yes
+WBGene00008426	D2045.9	protein_coding_gene	"anal depressor muscle, anal sphincter muscle, anterior distal tip cell, body wall musculature, mu_int_L, mu_int_R, posterior distal tip cell, reproductive system, vulva, vulval muscle"	"body wall muscle cell, head mesodermal cell"	Yes
+WBGene00008491	bgnt-1.1	protein_coding_gene	"amphid sheath cell, phasmid sheath cell"	"amphid sheath cell, somatic gonad precursor"	Yes
+WBGene00008547	F07A11.4	protein_coding_gene	"body wall musculature, pharynx, reproductive system, vulval muscle"	"body wall muscle cell, head mesodermal cell, intestine"	Yes
+WBGene00008567	acox-1.4	protein_coding_gene	intestine	"hermaphrodite-specific anatomical entity, intestine"	Yes
+WBGene00008580	dsb-1	protein_coding_gene	gonad	"germ line, germline precursor cell, head mesodermal cell"	Yes
+WBGene00008603	F09B9.4	protein_coding_gene	body wall musculature	"body wall muscle cell, head mesodermal cell, muscle cell"	Yes
+WBGene00008605	mlt-9	protein_coding_gene	hypodermis	"germline precursor cell, hypodermis"	Yes
+WBGene00008654	pfas-1	protein_coding_gene	intestinal cell	intestine	Yes
+WBGene00008694	vwa-8	protein_coding_gene	"hypodermal cell, intestinal cell, intestine, muscle cell, pharynx"	"germ line, intestine"	Yes
+WBGene00008781	rpoa-2	protein_coding_gene	"Cell, intestine, pharynx, rectal gland cell"	"germ line, hermaphrodite-specific anatomical entity, intestine, somatic gonad precursor"	Yes
+WBGene00008806	mboa-7	protein_coding_gene	"anterior distal tip cell, body wall musculature, intestine, pharyngeal muscle cell, posterior distal tip cell, spermatheca, vulva"	"coelomocyte, intestine"	Yes
+WBGene00009187	F27D4.1	protein_coding_gene	intestine	"intestine, muscle cell"	Yes
+WBGene00009189	F27D4.4	protein_coding_gene	"hypodermis, intestine"	"germ line, intestine"	Yes
+WBGene00009211	wdr-46	protein_coding_gene	"body wall musculature, germ line, head, hypodermis, intestine"	"body wall muscle cell, germ line, intestine"	Yes
+WBGene00009397	clec-66	protein_coding_gene	intestine	intestine	Yes
+WBGene00009445	F35G12.12	protein_coding_gene	intestine	"germ line, intestine"	Yes
+WBGene00009470	F36D3.4	protein_coding_gene	spermatheca	"body wall muscle cell, germ line, hypodermis, male"	Yes
+WBGene00009493	hrg-4	protein_coding_gene	intestine	"intestine, muscle cell, somatic gonad precursor"	Yes
+WBGene00009606	F40G12.11	protein_coding_gene	germ line	"AB, germ line, hermaphrodite-specific anatomical entity, hypodermis, pharyngeal muscle cell, Psub2"	Yes
+WBGene00009895	scl-2	protein_coding_gene	intestinal cell	"excretory cell, head mesodermal cell, intestine, male-specific anatomical entity, pharyngeal muscle cell"	Yes
+WBGene00009946	ogr-2	protein_coding_gene	gonad	"germ line, germline precursor cell, hypodermis"	Yes
+WBGene00009973	F53C11.3	protein_coding_gene	intestine	"coelomocyte, germ line, intestine, muscle cell, somatic gonad precursor"	Yes
+WBGene00010062	lipl-1	protein_coding_gene	intestine	intestine	Yes
+WBGene00010123	F55G11.2	protein_coding_gene	intestine	intestine	Yes
+WBGene00010124	F55G11.4	protein_coding_gene	intestine	intestine	Yes
+WBGene00010135	F55H12.4	protein_coding_gene	"anus, hypodermis, pharynx, vulva"	hypodermis	Yes
+WBGene00010184	F57A10.2	protein_coding_gene	germ line	germ line	Yes
+WBGene00010228	clec-161	protein_coding_gene	"germ line, vas deferens"	"germ line, male, male-specific anatomical entity"	Yes
+WBGene00010256	hrg-3	protein_coding_gene	intestinal cell	"head mesodermal cell, intestine"	Yes
+WBGene00010266	dct-18	protein_coding_gene	intestine	"head mesodermal cell, intestine, pharyngeal muscle cell"	Yes
+WBGene00010340	slcf-1	protein_coding_gene	intestine	"head mesodermal cell, intestine"	Yes
+WBGene00010492	meg-1	protein_coding_gene	"germ line, germline blastomere, oocyte, Psub2, Psub3, Psub4"	"germ line, germline precursor cell"	Yes
+WBGene00010537	mys-2	protein_coding_gene	germ line	germ line	Yes
+WBGene00010593	gsnl-1	protein_coding_gene	"anal depressor muscle, body wall musculature, hypodermis, mu_int_L, mu_int_R, reproductive system, vulval muscle"	"body wall muscle cell, muscle cell"	Yes
+WBGene00010609	dut-1	protein_coding_gene	intestine	"cephalic sheath cell, germ line, germline precursor cell, head mesodermal cell, hypodermis, intestine, pharyngeal muscle cell"	Yes
+WBGene00010651	K08C9.2	protein_coding_gene	spermatheca	"germ line, male"	Yes
+WBGene00010663	toca-2	protein_coding_gene	"spermatheca, uterus"	"germ line, germline precursor cell, muscle cell"	Yes
+WBGene00010665	rml-1	protein_coding_gene	"body wall musculature, hypodermis, intestine"	"body wall musculature, germ line, germline precursor cell, head mesodermal cell, intestine, muscle cell, pharynx"	Yes
+WBGene00010675	K08E7.8	protein_coding_gene	"anal depressor muscle, body wall musculature, pharynx, reproductive system, vulval muscle"	"body wall muscle cell, intestine, muscle cell, somatic gonad precursor"	Yes
+WBGene00010706	cyp-14A2	protein_coding_gene	intestine	intestine	Yes
+WBGene00010734	parn-1	protein_coding_gene	germ line	"germ line, germline precursor cell, head mesodermal cell"	Yes
+WBGene00010745	dod-17	protein_coding_gene	intestine	"head mesodermal cell, intestine, pharynx"	Yes
+WBGene00010785	top-2	protein_coding_gene	germ line	germ line	Yes
+WBGene00010809	lias-1	protein_coding_gene	"body wall musculature, excretory cell, intestine, pharynx, reproductive system, vulval muscle"	"anal depressor muscle, body wall musculature, germ line, intestine, muscle cell, pharynx, somatic gonad precursor, vulval muscle"	Yes
+WBGene00010943	M176.4	protein_coding_gene	"arcade cell, intestine"	intestine	Yes
+WBGene00011003	R04B5.5	protein_coding_gene	"body wall musculature, intestine"	"hypodermis, intestine, male-specific anatomical entity, muscle cell, somatic gonad precursor"	Yes
+WBGene00011104	cut-5	protein_coding_gene	seam cell	hypodermis	Yes
+WBGene00011182	R09H10.5	protein_coding_gene	intestine	"coelomocyte, head mesodermal cell, intestine"	Yes
+WBGene00011232	pck-2	protein_coding_gene	"body wall musculature, Cell, hermaphrodite, hypodermis, intestine, male, muscle cell, muscle of the reproductive system, pharyngeal muscle cell, pharynx, reproductive system, spermatheca, vulval muscle"	"intestine, muscle cell"	Yes
+WBGene00011235	suro-1	protein_coding_gene	"hypodermis, intestine"	"body wall musculature, germline precursor cell, hypodermis, intestine, somatic gonad precursor"	Yes
+WBGene00011323	mut-15	protein_coding_gene	germ line	"germ line, germline precursor cell"	Yes
+WBGene00011376	gla-3	protein_coding_gene	"germ line, muscle cell, somatic cell"	"germ line, germline precursor cell, head mesodermal cell, intestine, pharynx"	Yes
+WBGene00011448	tag-348	pseudogene	"body wall musculature, vulval muscle"	"body wall muscle cell, muscle cell"	Yes
+WBGene00011489	T05F1.2	protein_coding_gene	germ line	"germ line, hermaphrodite-specific anatomical entity"	Yes
+WBGene00011501	rmd-1	protein_coding_gene	"germ line, gonadal sheath cell"	"germ line, germline precursor cell, intestine, somatic gonad precursor"	Yes
+WBGene00011505	pzf-1	protein_coding_gene	gonad	"EMS, germ line, germline precursor cell, hermaphrodite-specific anatomical entity"	Yes
+WBGene00011583	T07D10.3	protein_coding_gene	seam cell	hypodermis	Yes
+WBGene00011736	T12D8.9	protein_coding_gene	"anal depressor muscle, anal sphincter muscle, body wall musculature, intestinal muscle, pharyngeal muscle cell, vulval muscle"	"body wall muscle cell, body wall musculature, germ line, muscle cell"	Yes
+WBGene00011831	T19B10.2	protein_coding_gene	hypodermis	"germline precursor cell, hypodermis, intestine"	Yes
+WBGene00011832	bgal-1	protein_coding_gene	head mesodermal cell	"body wall musculature, head mesodermal cell, muscle cell"	Yes
+WBGene00011938	alh-13	protein_coding_gene	intestine	"germ line, intestine, somatic gonad precursor"	Yes
+WBGene00011945	alg-5	protein_coding_gene	germ line	"germ line, germline precursor cell"	Yes
+WBGene00012186	mlt-11	protein_coding_gene	hypodermis	"hypodermis, male-specific anatomical entity"	Yes
+WBGene00012259	sulp-7	protein_coding_gene	"body wall musculature, hypodermis, intestine, pharyngeal muscle cell, vulval muscle"	"head mesodermal cell, intestine"	Yes
+WBGene00012316	ctps-1	protein_coding_gene	"germ line, intestine"	intestine	Yes
+WBGene00012344	ola-1	protein_coding_gene	"anal depressor muscle, hypodermis, intestine"	"body wall muscle cell, germ line, hypodermis, intestine, somatic gonad precursor"	Yes
+WBGene00012387	Y6B3B.1	protein_coding_gene	"coelomocyte, hypodermis"	"coelomocyte, germline precursor cell, gon_male_dtc anterior, gon_male_dtc posterior, male-specific anatomical entity, somatic gonad precursor, Z1, Z1.p, Z4, Z4.a"	Yes
+WBGene00012559	epg-3	protein_coding_gene	"body wall musculature, intestine, pharyngeal muscle cell, pharynx"	pharyngeal muscle cell	Yes
+WBGene00012650	orc-1	protein_coding_gene	germ line	"germ line, head mesodermal cell, hermaphrodite-specific anatomical entity"	Yes
+WBGene00012704	mlt-3	protein_coding_gene	"hyp7 syncytium, hypodermis"	"germline precursor cell, hypodermis, intestine"	Yes
+WBGene00012756	Y41C4A.9	protein_coding_gene	"body wall musculature, intestine, pharynx, rectal gland cell"	"body wall muscle cell, germ line, germline precursor cell"	Yes
+WBGene00012767	fcd-2	protein_coding_gene	germ line	"C, germ line, gon_male_dtc anterior, gon_male_dtc posterior, intestine, Z1.p, Z4.a"	Yes
+WBGene00012845	set-24	protein_coding_gene	germ line	"germ line, germline precursor cell, head mesodermal cell"	Yes
+WBGene00013189	Y54E2A.4	protein_coding_gene	"reproductive system, vulva"	germ line	Yes
+WBGene00013352	lon-8	protein_coding_gene	"hyp4, hyp7 syncytium, intestine"	"germline precursor cell, hypodermis"	Yes
+WBGene00013457	paqr-3	protein_coding_gene	"excretory duct cell, gonadal sheath cell, hypodermis, rectal gland cell, vulva"	"germline precursor cell, hypodermis"	Yes
+WBGene00013462	micu-1	protein_coding_gene	"germ cell, hypodermal cell, muscle cell, PLML, PLMR"	"germ line, head mesodermal cell"	Yes
+WBGene00013499	Y70G10A.3	protein_coding_gene	"excretory cell, hypodermis"	hypodermis	Yes
+WBGene00013541	lonp-2	protein_coding_gene	intestine	"head mesodermal cell, hypodermis, intestine, pharyngeal muscle cell"	Yes
+WBGene00013575	acs-5	protein_coding_gene	"hypodermis, intestine"	intestine	Yes
+WBGene00013577	Y76A2B.5	protein_coding_gene	"body wall musculature, gonad, vulva"	"intestine, muscle cell"	Yes
+WBGene00013716	Y106G6H.1	protein_coding_gene	intestine	"head mesodermal cell, intestine"	Yes
+WBGene00013996	ZK550.2	protein_coding_gene	"excretory cell, intestine"	intestine	Yes
+WBGene00014117	clec-91	protein_coding_gene	germ line	"cephalic sheath cell, germ line, germline precursor cell, Psub3"	Yes
+WBGene00014240	htas-1	protein_coding_gene	"sperm, spermatid"	"germ line, male"	Yes
+WBGene00015028	B0207.5	protein_coding_gene	vas deferens valve cell	"germ line, male"	Yes
+WBGene00015083	egg-1	protein_coding_gene	germ line	"cephalic sheath cell, EMS, germ line, germline precursor cell, hypodermis, Psub1"	Yes
+WBGene00015235	cdc-26	protein_coding_gene	germ line	"germ line, somatic gonad precursor"	Yes
+WBGene00015258	B0554.5	protein_coding_gene	excretory cell	excretory cell	Yes
+WBGene00015450	C04F5.8	protein_coding_gene	"hypodermis, intestine, pharynx"	"body wall muscle cell, germ line, intestine"	Yes
+WBGene00015565	C07D8.6	protein_coding_gene	germ line	"germ line, intestine, Psub1, somatic gonad precursor"	Yes
+WBGene00015684	C10G8.8	protein_coding_gene	"anal depressor muscle, body wall musculature, excretory cell, hypodermis, intestine, pharynx, rectal epithelium, reproductive system, tail, uterine muscle, vulva, vulval muscle"	"body wall muscle cell, body wall musculature, head mesodermal cell, intestine, muscle cell, pharynx"	Yes
+WBGene00015689	spch-2	protein_coding_gene	sperm	"amphid sheath cell, germ line, male, somatic gonad precursor"	Yes
+WBGene00015802	kynu-1	protein_coding_gene	"E lineage cell, hypodermal cell"	"body wall muscle cell, head mesodermal cell, hypodermis, muscle cell"	Yes
+WBGene00015899	C17E7.4	protein_coding_gene	germ line	"germ line, germline precursor cell, hypodermis, pharyngeal muscle cell"	Yes
+WBGene00015912	fbxc-50	protein_coding_gene	germ line	"germ line, pharyngeal muscle cell, somatic gonad precursor, Z1, Z4"	Yes
+WBGene00015936	C17H12.11	protein_coding_gene	"body wall musculature, reproductive system, spermatheca, vulval muscle"	"body wall muscle cell, hypodermis, muscle cell"	Yes
+WBGene00015954	C18B2.3	protein_coding_gene	"anal depressor muscle, body wall musculature, vulval muscle"	"body wall muscle cell, germ line, muscle cell"	Yes
+WBGene00016020	sptl-1	protein_coding_gene	"head, intestine"	intestine	Yes
+WBGene00016204	gsto-1	protein_coding_gene	intestine	"head mesodermal cell, intestine"	Yes
+WBGene00016210	C29F5.1	protein_coding_gene	"anal depressor muscle, anal sphincter muscle, body wall musculature, vulval muscle"	"body wall muscle cell, body wall musculature, germ line, muscle cell"	Yes
+WBGene00016236	heri-1	protein_coding_gene	"germ cell, Psub1, Psub2, Psub3, Psub4, Z2, Z3"	"germ line, germline precursor cell, head mesodermal cell"	Yes
+WBGene00016283	zmp-3	protein_coding_gene	anchor cell	germ line	Yes
+WBGene00016329	osr-1	protein_coding_gene	"hypodermis, intestine"	"hypodermis, intestine"	Yes
+WBGene00016440	gipc-1	protein_coding_gene	"intestine, spermatid"	"germ line, intestine, male"	Yes
+WBGene00016450	clec-5	protein_coding_gene	"anal depressor muscle, head, intestine, rectal gland cell"	intestine	Yes
+WBGene00016592	erl-1	protein_coding_gene	gonad	"germ line, germline precursor cell, Psub3"	Yes
+WBGene00016642	chil-10	protein_coding_gene	"head, intestine, rectal gland cell"	intestine	Yes
+WBGene00016653	ssb-1	protein_coding_gene	"body wall musculature, head, intestine, pharynx, tail"	"body wall musculature, germ line, intestine, pharynx"	Yes
+WBGene00016722	C46G7.2	protein_coding_gene	"body wall musculature, vulval muscle"	"body wall muscle cell, body wall musculature, head mesodermal cell, muscle cell"	Yes
+WBGene00016728	C46H11.2	protein_coding_gene	intestine	"intestine, pharyngeal muscle cell"	Yes
+WBGene00016730	C46H11.6	protein_coding_gene	"anal depressor muscle, body wall musculature, intestine, vulval muscle"	"body wall muscle cell, germ line, male"	Yes
+WBGene00016732	phat-1	protein_coding_gene	"g1AL, g1AR, g1P, g2L, g2R, Pharyngeal gland cell"	"body wall musculature, pharynx"	Yes
+WBGene00016769	C49C8.5	protein_coding_gene	intestine	"head mesodermal cell, intestine"	Yes
+WBGene00016848	klo-1	protein_coding_gene	"excretory canal, excretory cell, intestine"	intestine	Yes
+WBGene00016960	vps-33.2	protein_coding_gene	"intestine, pharynx, spermatheca"	"germ line, Psub1"	Yes
+WBGene00017103	klo-2	protein_coding_gene	"hypodermis, intestine"	intestine	Yes
+WBGene00017133	EEED8.2	protein_coding_gene	"hypodermis, intestine"	"hypodermis, intestine, pharyngeal muscle cell"	Yes
+WBGene00017159	F01F1.2	protein_coding_gene	"body wall musculature, intestine, pm2, pm3, pm4, pm5, pm6, pm7"	"germ line, intestine"	Yes
+WBGene00017169	F01F1.15	protein_coding_gene	"intestine, pharynx, rectal gland cell"	"head mesodermal cell, hypodermis, intestine"	Yes
+WBGene00017263	F08F3.6	protein_coding_gene	germ line	"AB, body wall muscle cell, germ line, germline precursor cell"	Yes
+WBGene00017272	F08F8.7	protein_coding_gene	intestine	"germ line, intestine"	Yes
+WBGene00017273	gos-28	protein_coding_gene	"intestine, seam cell, vulva"	"germ line, intestine"	Yes
+WBGene00017375	pbo-6	protein_coding_gene	body wall musculature	"body wall muscle cell, male"	Yes
+WBGene00017376	F11C7.2	protein_coding_gene	"amphid sheath cell, phasmid sheath cell"	amphid sheath cell	Yes
+WBGene00017490	pud-2.1	protein_coding_gene	"hypodermis, intestine"	intestine	Yes
+WBGene00017498	pud-4	protein_coding_gene	"hyp7 syncytium, intestine"	"intestine, pharyngeal muscle cell"	Yes
+WBGene00017499	pud-1.1	protein_coding_gene	"hypodermis, intestine"	intestine	Yes
+WBGene00017501	pud-3	protein_coding_gene	"head, hyp7 syncytium, intestine, pm3, rectal gland cell"	"intestine, pharyngeal muscle cell"	Yes
+WBGene00017535	atf-8	protein_coding_gene	"hypodermis, rectum, seam cell, vulva"	"amphid sheath cell, hypodermis, intestine"	Yes
+WBGene00017540	F17E9.3	protein_coding_gene	seminal vesicle	"germ line, male"	Yes
+WBGene00017559	mpz-3	protein_coding_gene	male gonad	"germ line, male"	Yes
+WBGene00017574	pxmp-4	protein_coding_gene	"head, hypodermis, intestine"	"head mesodermal cell, intestine"	Yes
+WBGene00017625	cgt-2	protein_coding_gene	"intestine, vulva"	intestine	Yes
+WBGene00017843	F26G5.1	protein_coding_gene	germ line	germ line	Yes
+WBGene00017990	cec-4	protein_coding_gene	"germ cell, somatic cell"	germ line	Yes
+WBGene00018174	F38B6.4	protein_coding_gene	intestinal cell	"head mesodermal cell, intestine"	Yes
+WBGene00018206	ugt-61	protein_coding_gene	"excretory cell, intestine, pharynx, tail"	intestine	Yes
+WBGene00018237	irg-7	protein_coding_gene	intestine	"head mesodermal cell, intestine, pharyngeal muscle cell"	Yes
+WBGene00018269	acs-11	protein_coding_gene	"hypodermis, intestine"	"germ line, germline precursor cell, intestine"	Yes
+WBGene00018403	F44A2.3	protein_coding_gene	"AMsoL, AMsoR, Excretory duct, head, hypodermis, vulva"	hypodermis	Yes
+WBGene00018636	oef-1	protein_coding_gene	"germ cell, germ line, gonad, hermaphrodite gonad, oocyte, P lineage cell"	"germ line, germline precursor cell, head mesodermal cell, hypodermis"	Yes
+WBGene00018657	acl-4	protein_coding_gene	"anal depressor muscle, body wall musculature, hypodermis, intestine, pharynx, reproductive system, vulval muscle"	"body wall musculature, intestine, somatic gonad precursor"	Yes
+WBGene00018718	dhcr-24	protein_coding_gene	intestine	"hypodermis, intestine"	Yes
+WBGene00018731	F53A9.8	protein_coding_gene	intestine	"head mesodermal cell, intestine, pharyngeal muscle cell"	Yes
+WBGene00018819	rog-1	protein_coding_gene	germ line	"body wall muscle cell, germ line, germline precursor cell, head mesodermal cell, muscle cell"	Yes
+WBGene00018827	pst-2	protein_coding_gene	"hypodermis, intestine, Pharyngeal gland cell, vulva"	"germ line, hypodermis, somatic gonad precursor"	Yes
+WBGene00018904	pycr-4	protein_coding_gene	"hypodermis, intestinal cell"	"germ line, intestine"	Yes
+WBGene00018949	acbp-4	protein_coding_gene	intestine	"germ line, intestine, male"	Yes
+WBGene00018986	cdo-1	protein_coding_gene	"hypodermis, intestine, tail"	"germline precursor cell, hypodermis, intestine"	Yes
+WBGene00019011	F57C9.4	protein_coding_gene	"developing hermaphrodite gonad, gonad, hypodermis, intestine"	germ line	Yes
+WBGene00019013	tofu-4	protein_coding_gene	germ cell	"germ line, germline precursor cell"	Yes
+WBGene00019017	F57F4.4	protein_coding_gene	intestine	"head mesodermal cell, intestine, pharyngeal muscle cell, Psub1"	Yes
+WBGene00019060	acox-3	protein_coding_gene	intestinal cell	"intestine, pharyngeal muscle cell"	Yes
+WBGene00019289	kcc-3	protein_coding_gene	"amphid sheath cell, cephalic sheath cell, head, neuronal sheath cell, phasmid sheath cell, socket cell, tail"	"amphid sheath cell, cephalic sheath cell, CEPshDL, CEPshDR, CEPshVL, CEPshVR, male, male-specific anatomical entity"	Yes
+WBGene00019376	lipl-4	protein_coding_gene	"intestine, seam cell"	intestine	Yes
+WBGene00019464	K07B1.4	protein_coding_gene	"body wall musculature, intestine, rectal gland cell"	"germ line, intestine, muscle cell, somatic gonad precursor"	Yes
+WBGene00019473	cyp-35A5	protein_coding_gene	intestine	intestine	Yes
+WBGene00019492	K07E3.4	protein_coding_gene	"hypodermis, intestine, pharynx"	"coelomocyte, germ line, intestine"	Yes
+WBGene00019608	ani-2	protein_coding_gene	germ line	"germ line, germline precursor cell, pharyngeal muscle cell"	Yes
+WBGene00019617	ctsa-2	protein_coding_gene	intestine	"head mesodermal cell, intestine"	Yes
+WBGene00019620	fah-1	protein_coding_gene	"hypodermis, intestine"	intestine	Yes
+WBGene00019629	cid-1	protein_coding_gene	"germ line, intestine"	"germ line, germline precursor cell, intestine"	Yes
+WBGene00019667	spe-49	protein_coding_gene	sperm	"germ line, male"	Yes
+WBGene00019682	K12H4.7	protein_coding_gene	intestine	"head mesodermal cell, intestine, pharyngeal muscle cell"	Yes
+WBGene00019717	trx-3	protein_coding_gene	intestine	"head mesodermal cell, intestine"	Yes
+WBGene00019763	galt-1	protein_coding_gene	"coelomocyte, intestine"	"coelomocyte, intestine"	Yes
+WBGene00019811	egg-2	protein_coding_gene	germ line	"EMS, germ line, germline precursor cell, head mesodermal cell, hypodermis, pharyngeal muscle cell, Psub1"	Yes
+WBGene00019819	aass-1	protein_coding_gene	"gonadal sheath cell, hypodermal cell"	"germ line, hypodermis"	Yes
+WBGene00019864	ceh-93	protein_coding_gene	"body wall musculature, intestine, seam cell"	"body wall muscle cell, hypodermis, intestine"	Yes
+WBGene00019963	R08E5.3	protein_coding_gene	intestine	"germline precursor cell, intestine, male-specific anatomical entity"	Yes
+WBGene00020035	egg-5	protein_coding_gene	oocyte	"germ line, germline precursor cell, head mesodermal cell, intestine"	Yes
+WBGene00020062	nhr-270	protein_coding_gene	seam cell	hypodermis	Yes
+WBGene00020068	cra-1	protein_coding_gene	"body wall musculature, intestine, reproductive system, vulval muscle"	"body wall muscle cell, germ line, intestine, somatic gonad precursor"	Yes
+WBGene00020091	rnp-8	protein_coding_gene	"germ line, oocyte"	"germ line, germline precursor cell, head mesodermal cell"	Yes
+WBGene00020117	R155.3	protein_coding_gene	gonad	"germ line, male"	Yes
+WBGene00020155	T02B11.3	protein_coding_gene	"amphid sheath cell, AMshL, AMshR, phasmid sheath cell"	amphid sheath cell	Yes
+WBGene00020187	gsp-4	protein_coding_gene	"anal sphincter muscle, germ line, ILsoDL, ILsoVL, intestine, sperm"	"germ line, intestine, male, muscle cell"	Yes
+WBGene00020191	clec-53	protein_coding_gene	intestine	"intestine, male-specific anatomical entity"	Yes
+WBGene00020201	T04A6.2	protein_coding_gene	"reproductive system, spermatheca"	"germline precursor cell, gon_male_dtc anterior, gon_male_dtc posterior, male, male-specific anatomical entity, somatic gonad precursor, Z1, Z1.p, Z4, Z4.a"	Yes
+WBGene00020286	gtsf-1	protein_coding_gene	germ line	germ line	Yes
+WBGene00020466	sld-2	protein_coding_gene	germ line	"germ line, gon_male_dtc anterior, gon_male_dtc posterior, hypodermis, Z1.p, Z4.a"	Yes
+WBGene00020532	math-42	protein_coding_gene	intestine	intestine	Yes
+WBGene00020588	T19H12.2	protein_coding_gene	germ line	"germ line, germline precursor cell, head mesodermal cell"	Yes
+WBGene00020600	trd-1	protein_coding_gene	"anchor cell, distal tip cell, gonadal primordium, seam cell, spermatheca, vulval precursor cell"	"body wall muscle cell, germ line, germline precursor cell"	Yes
+WBGene00020661	smz-2	protein_coding_gene	sperm	"germ line, hermaphrodite-specific anatomical entity, male, male-specific anatomical entity"	Yes
+WBGene00020687	ruvb-2	protein_coding_gene	gonad	"germ line, hermaphrodite-specific anatomical entity, muscle cell, somatic gonad precursor"	Yes
+WBGene00020693	lron-8	protein_coding_gene	"body wall musculature, head muscle, hypodermis, pharynx, rectal gland cell"	"body wall muscle cell, body wall musculature, hypodermis, somatic gonad precursor"	Yes
+WBGene00020784	tat-4	protein_coding_gene	"anterior gonad arm, intestine, pharyngeal-intestinal valve, rectal gland cell, spermatheca, uterus"	"intestine, muscle cell"	Yes
+WBGene00020847	cgr-1	protein_coding_gene	intestine	intestine	Yes
+WBGene00020884	T28B4.1	protein_coding_gene	"body wall musculature, M.vlpaaapa, M.vlpaaapp, M.vlpaapaa, M.vlpaapap, M.vrpaaapa, M.vrpaaapp, M.vrpaapaa, M.vrpaapap"	"body wall muscle cell, coelomocyte, head mesodermal cell, muscle cell"	Yes
+WBGene00020906	T28H11.8	protein_coding_gene	excretory cell	excretory cell	Yes
+WBGene00020911	cpt-6	protein_coding_gene	hypodermis	"hypodermis, somatic gonad precursor"	Yes
+WBGene00021058	vps-18	protein_coding_gene	"body wall musculature, coelomocyte, gonadal sheath cell, hypodermis, intestine, spermatheca"	"CEPshDL, CEPshDR, CEPshVL, CEPshVR, germ line, germline precursor cell, intestine"	Yes
+WBGene00021270	pid-3	protein_coding_gene	germ line	"germ line, germline precursor cell, somatic gonad precursor"	Yes
+WBGene00021282	set-21	protein_coding_gene	"germ line, hypodermis"	"germ line, gon_male_dtc anterior, gon_male_dtc posterior, Z1.p, Z4.a"	Yes
+WBGene00021296	Y25C1A.13	protein_coding_gene	intestine	"intestine, muscle cell, somatic gonad precursor"	Yes
+WBGene00021391	smut-1	protein_coding_gene	"embryonic cell, germ cell"	germ line	Yes
+WBGene00021797	plep-1	protein_coding_gene	excretory cell	excretory cell	Yes
+WBGene00021952	vha-19	protein_coding_gene	"excretory canal, excretory cell, hypodermis, intestine, pharynx, vulva"	excretory cell	Yes
+WBGene00022034	deps-1	protein_coding_gene	"germ line, oocyte"	"body wall muscle cell, germ line, germline precursor cell, head mesodermal cell, hypodermis"	Yes
+WBGene00022076	daao-1	protein_coding_gene	intestinal cell	intestine	Yes
+WBGene00022224	set-28	protein_coding_gene	germ line	germline precursor cell	Yes
+WBGene00022286	rga-4	protein_coding_gene	"embryonic cell, germ line"	"germ line, head mesodermal cell"	Yes
+WBGene00022371	set-29	protein_coding_gene	"germ line, hypodermis, intestine, muscle cell"	"germ line, hypodermis"	Yes
+WBGene00022381	ubxn-2	protein_coding_gene	"body wall musculature, Cell, gonad, intestine, pharynx, spermatocyte"	germ line	Yes
+WBGene00022554	duxl-1	protein_coding_gene	"coelomocyte, excretory cell, germ line, gonad, hypodermis, intestine, spermatheca"	"body wall muscle cell, coelomocyte, germ line, gon_male_dtc anterior, gon_male_dtc posterior, hypodermis, intestine, somatic gonad precursor, Z1, Z1.p, Z4, Z4.a"	Yes
+WBGene00022743	mlt-7	protein_coding_gene	"hyp3, hyp4, hyp5, hyp6, hyp7 syncytium, seam cell"	"germline precursor cell, hypodermis"	Yes
+WBGene00022750	tres-1	protein_coding_gene	gonad	"germ line, somatic gonad precursor"	Yes
+WBGene00022781	pmt-1	protein_coding_gene	"hypodermis, seam cell"	"hypodermis, intestine, somatic gonad precursor"	Yes
+WBGene00022801	pcp-5	protein_coding_gene	body wall musculature	"body wall muscle cell, muscle cell"	Yes
+WBGene00022827	ZK816.4	protein_coding_gene	pharynx	"intestine, pharynx"	Yes
+WBGene00043067	dlc-5	protein_coding_gene	pharynx	pharyngeal muscle cell	Yes
+WBGene00044069	hat-1	protein_coding_gene	"coelomocyte, germ line"	"germ line, somatic gonad precursor"	Yes
+WBGene00077766	rgba-1	protein_coding_gene	"cephalic sheath cell, intestine, ray, ray structural cell, socket cell"	intestine	Yes
+WBGene00194892	dsb-2	protein_coding_gene	"germ cell, gonad"	"germ line, head mesodermal cell"	Yes
+WBGene00219649	linc-55	lincRNA_gene	muscle cell	"head mesodermal cell, muscle cell"	Yes
+WBGene00004960	spe-6	protein_coding_gene	sperm	"germ line, germline precursor cell, male"	"rtPCR, not fluorescence"
+WBGene00004420	rpl-9	protein_coding_gene	"body wall musculature, excretory cell, intestine, pharynx, tail"	"germ line, intestine, somatic gonad precursor"	Probably widely expressed
+WBGene00011083	glo-1	protein_coding_gene	intestine	intestine	Personal correspondence says this is wrong
+WBGene00004915	snr-2	protein_coding_gene	gonad	"germ line, somatic gonad precursor"	Not well described
+WBGene00004916	snr-3	protein_coding_gene	gonad	"germ line, somatic gonad precursor"	Not well described
+WBGene00000023	abt-5	protein_coding_gene	"head, intestine, rectal gland cell"	male	No
+WBGene00000030	abu-7	protein_coding_gene	grinder	pharynx	No
+WBGene00000041	aco-2	protein_coding_gene	Cell	"germ line, intestine, muscle cell"	No
+WBGene00000168	apx-1	protein_coding_gene	"AB, ABa, ABal, ABar, ABp, ABpl, ABpr, C, E, EMS, gonad, gonadal sheath cell, hypodermal cell, MS, P0, P6.p hermaphrodite, P6.pa, P6.paa, P6.pap, P6.pp, P6.ppa, P6.ppp, pharynx, Psub1, Psub2, Psub3, vm1, vulE, vulF, vulva, vulval cell"	"germ line, germline precursor cell, head mesodermal cell"	No
+WBGene00000171	aqp-3	protein_coding_gene	"excretory cell, intestine, vas deferens"	male	No
+WBGene00000275	bub-1	protein_coding_gene	"AB, seam cell"	"germ line, head mesodermal cell"	No
+WBGene00000382	cdc-6	protein_coding_gene	seam cell	"germ line, intestine, somatic gonad precursor"	No
+WBGene00000428	ceh-1	protein_coding_gene	seam cell	"gon_male_dtc anterior, gon_male_dtc posterior, hermaphrodite-specific anatomical entity, Z1.p, Z4.a"	No
+WBGene00000433	ceh-8	protein_coding_gene	"Z1, Z4"	"gon_male_dtc anterior, gon_male_dtc posterior, ventral nerve cord, Z1, Z1.p, Z4, Z4.a"	No
+WBGene00000469	ces-2	protein_coding_gene	"excretory duct cell, R1AL, R1AR, R1BL, R1BR, R1stL, R1stR, R2AL, R2AR, R2BL, R2BR, R2stL, R2stR, R3AL, R3AR, R3BL, R3BR, R3stL, R3stR, R4AL, R4AR, R4BL, R4BR, R4stL, R4stR, R5AL, R5AR, R5BL, R5BR, R5stL, R5stR, R6AL, R6AR, R6BL, R6BR, R6stL, R6stR, R7AL, R7AR, R7BL, R7BR, R7stL, R7stR, R8AL, R8AR, R8BL, R8BR, R8stL, R8stR, R9AL, R9AR, R9BL, R9BR, R9stL, R9stR"	"gon_male_dtc anterior, gon_male_dtc posterior, hypodermis, pharynx, ray, Z1.p, Z4.a"	No
+WBGene00000493	che-14	protein_coding_gene	"epithelial cell, excretory system, hypodermis, rectum, seam cell, vulva"	"gon_male_dtc anterior, gon_male_dtc posterior, somatic gonad precursor, Z1, Z1.p, Z4, Z4.a"	No
+WBGene00000497	chs-2	protein_coding_gene	"G1, G2, metacorpus, pharynx, pm3, pm4, procorpus, terminal bulb"	pharynx	No
+WBGene00000513	ckb-3	protein_coding_gene	"pm6, somatic gonad, Z1, Z4"	"germ line, gon_male_dtc anterior, gon_male_dtc posterior, somatic gonad precursor, Z1, Z1.p, Z4, Z4.a"	No
+WBGene00000523	clc-2	protein_coding_gene	"hypodermis, seam cell"	"amphid sheath cell, gon_male_dtc anterior, gon_male_dtc posterior, somatic gonad precursor, Z1.p, Z4.a"	No
+WBGene00000536	clk-1	protein_coding_gene	Cell	"germ line, germline precursor cell, intestine, muscle cell"	No
+WBGene00000546	clp-6	protein_coding_gene	hypodermis	"amphid sheath cell, male"	No
+WBGene00000596	col-7	protein_coding_gene	seam cell	hypodermis	No
+WBGene00000608	col-19	protein_coding_gene	"cuticle, hyp7 syncytium, hypodermis, male, seam cell, syncytium, vulva"	"body wall muscle cell, cephalic sheath cell, hypodermis"	No
+WBGene00000626	col-49	protein_coding_gene	"hyp7 syncytium, seam cell"	amphid sheath cell	No
+WBGene00000647	col-71	protein_coding_gene	"hyp7 syncytium, seam cell"	"amphid sheath cell, gon_male_dtc anterior, gon_male_dtc posterior, somatic gonad precursor, Z1.p, Z4.a"	No
+WBGene00000751	col-178	protein_coding_gene	Cell	"cephalic sheath cell, hypodermis, somatic gonad precursor"	No
+WBGene00000868	cyb-3	protein_coding_gene	"AB, EMS, germ cell, germ line, male gonad, Psub1, Psub2"	"cephalic sheath cell, germ line, intestine"	No
+WBGene00000881	cyn-5	protein_coding_gene	"body wall musculature, intestine, pharynx"	"intestine, somatic gonad precursor"	No
+WBGene00000885	cyn-9	protein_coding_gene	hypodermis	"germ line, germline precursor cell, head mesodermal cell"	No
+WBGene00000942	deb-1	protein_coding_gene	gonad	"body wall muscle cell, head mesodermal cell, muscle cell"	No
+WBGene00000820	csp-2	protein_coding_gene	germ line	male	No
+WBGene00000843	cup-2	protein_coding_gene	Cell	"germ line, hypodermis, intestine"	No
+WBGene00001078	dpy-19	protein_coding_gene	"body wall musculature, hyp7 syncytium, P1, P10, P11, P12, P2, P3, P4, P5, P6, P7, P8, P9, QL, QR, seam cell, V1L, V1R, V2L, V2R, V3L, V3R, V4L, V4R, V5L, V5R, V6L, V6R"	"germ line, intestine, muscle cell, somatic gonad precursor"	No
+WBGene00001154	ech-5	protein_coding_gene	pharynx	germ line	No
+WBGene00001311	end-3	protein_coding_gene	"E, E lineage cell, Ea, Ep, intestine"	germ line	No
+WBGene00001320	ent-1	protein_coding_gene	"intestine, isthmus, metacorpus, procorpus, terminal bulb"	"germ line, germline precursor cell, somatic gonad precursor"	No
+WBGene00001487	frk-1	protein_coding_gene	"body wall musculature, epithelial cell, germ line, hypodermis, intestine, seam cell, sperm, spermatheca, uterus"	male	No
+WBGene00001575	gei-18	protein_coding_gene	"anterior hypodermis, pharynx"	"amphid sheath cell, head mesodermal cell"	No
+WBGene00001639	gly-14	protein_coding_gene	"int1DL, int1DR, int1VL, int1VR, intestine"	"germ line, germline precursor cell, head mesodermal cell"	No
+WBGene00001707	grh-1	protein_coding_gene	hypodermis	intestine	No
+WBGene00001718	grl-9	protein_coding_gene	terminal bulb	intestine	No
+WBGene00001724	grl-15	protein_coding_gene	"hypodermis, reproductive system, vulB1, vulB2, vulC, vulD, vulE, vulva"	"germline precursor cell, hypodermis"	No
+WBGene00001733	grl-24	protein_coding_gene	"body wall musculature, intestine"	hypodermis	No
+WBGene00001750	gst-2	protein_coding_gene	head	"body wall muscle cell, intestine, muscle cell"	No
+WBGene00001829	hcp-1	protein_coding_gene	"AB, head, Psub1"	"germ line, head mesodermal cell"	No
+WBGene00001857	hil-6	protein_coding_gene	Cell	"CEPshDL, CEPshDR, CEPshVL, CEPshVR, gon_male_dtc anterior, gon_male_dtc posterior, Z1.p, Z4.a"	No
+WBGene00001918	his-44	protein_coding_gene	"hypodermis, intestine, seam cell"	somatic gonad precursor	No
+WBGene00001951	hlh-4	protein_coding_gene	"ABalppppaav, ABpraaapaav, ADLL, ADLR"	ray	No
+WBGene00001960	hlh-16	protein_coding_gene	"ABplpapaaa, ABplpapaap, ABprpapaaa, ABprpapaap, AIYL, AIYR, SIADL, SIADR, SIBVL, SIBVR, SMDDL, SMDDR"	germ line	No
+WBGene00002023	hsp-25	protein_coding_gene	"body wall musculature, gonad, pharynx, spermatheca"	"CEPshDL, CEPshDR, CEPshVL, CEPshVR, intestine, muscle cell"	No
+WBGene00002081	ina-1	protein_coding_gene	"ABplaapppp, anchor cell, Cell, distal tip cell, embryonic cell, male-specific anatomical entity, pharynx, spermatheca, spermathecal-uterine junction, ut1, ut2, ut2 anterior, ut3 anterior, ut3 posterior, ut4, vulE"	"CEPshDL, CEPshDR, CEPshVL, CEPshVR, coelomocyte, somatic gonad precursor"	No
+WBGene00002114	ins-31	protein_coding_gene	"coelomocyte, male gonad, seminal vesicle"	"germ line, male, male-specific anatomical entity"	No
+WBGene00002143	inx-21	protein_coding_gene	"body wall musculature, germ cell, gonad, intestine, sperm, spermatocyte, Z1, Z2, Z3, Z4"	"germ line, germline precursor cell"	No
+WBGene00002147	ire-1	protein_coding_gene	Cell	"CEPshDL, CEPshDR, CEPshVL, CEPshVR, germ line, germline precursor cell"	No
+WBGene00002152	iars-1	protein_coding_gene	"body wall musculature, hypodermis, pharynx, ventral nerve cord"	"germ line, somatic gonad precursor"	No
+WBGene00002212	kin-31	pseudogene	body wall musculature	"germ line, male, somatic gonad precursor"	No
+WBGene00002252	lat-2	protein_coding_gene	"excretory cell, pharynx"	somatic gonad precursor	No
+WBGene00002891	let-767	protein_coding_gene	"hypodermis, intestine, pharynx"	germ line	No
+WBGene00003031	lin-46	protein_coding_gene	"hypodermis, seam cell"	"gon_male_dtc anterior, gon_male_dtc posterior, somatic gonad precursor, Z1, Z1.p, Z4, Z4.a"	No
+WBGene00003037	lin-54	protein_coding_gene	"Cell, pharynx, vulva"	"germ line, intestine"	No
+WBGene00003038	lin-56	protein_coding_gene	somatic cell	"body wall muscle cell, body wall musculature, germ line, germline precursor cell, intestine"	No
+WBGene00003159	mcm-7	protein_coding_gene	"body region, body wall musculature, head, intestine, pharynx, tail"	"germ line, head mesodermal cell, hermaphrodite-specific anatomical entity, intestine"	No
+WBGene00003252	mig-21	protein_coding_gene	"body wall musculature, QL, QR"	"gon_male_dtc anterior, gon_male_dtc posterior, Z1.p, Z4.a"	No
+WBGene00003376	mls-1	protein_coding_gene	"anal depressor muscle, M.vlpaaapa, M.vlpaapap, M.vrpaaapa, M.vrpaapap, mu_int_L, mu_int_R, uterine muscle, vulva"	head mesodermal cell	No
+WBGene00003384	moc-1	protein_coding_gene	"anterior distal tip cell, body wall musculature, intestine, Pharyngeal gland cell, posterior distal tip cell, reproductive system, spermatheca, tail, uterus, vulval muscle"	"arcade cell, germ line, head mesodermal cell, pharyngeal-intestinal valve cell"	No
+WBGene00003389	mog-1	protein_coding_gene	Cell	germ line	No
+WBGene00003415	mars-1	protein_coding_gene	body wall musculature	"EMS, germ line, intestine, somatic gonad precursor"	No
+WBGene00003445	msp-52	pseudogene	"hermaphrodite gonad, male gonad, oocyte, sperm, spermatheca, uterus"	muscle cell	No
+WBGene00003452	msp-59	protein_coding_gene	"hermaphrodite gonad, male gonad, oocyte, sperm, spermatheca, uterus"	"amphid sheath cell, male-specific anatomical entity"	No
+WBGene00003456	msp-63	protein_coding_gene	"hermaphrodite gonad, male gonad, oocyte, sperm, spermatheca, uterus"	amphid sheath cell	No
+WBGene00003457	msp-64	protein_coding_gene	"hermaphrodite gonad, male gonad, oocyte, sperm, spermatheca, uterus"	"amphid sheath cell, hypodermis, male, male-specific anatomical entity"	No
+WBGene00003460	msp-71	pseudogene	"hermaphrodite gonad, male gonad, oocyte, sperm, spermatheca, uterus"	male	No
+WBGene00003462	msp-74	protein_coding_gene	"hermaphrodite gonad, male gonad, oocyte, sperm, spermatheca, uterus"	"amphid sheath cell, male, male-specific anatomical entity, seam cell"	No
+WBGene00003463	msp-76	protein_coding_gene	"hermaphrodite gonad, male gonad, oocyte, sperm, spermatheca, uterus"	"amphid sheath cell, male, male-specific anatomical entity"	No
+WBGene00003464	msp-77	protein_coding_gene	"hermaphrodite gonad, male gonad, oocyte, sperm, spermatheca, uterus"	"amphid sheath cell, germ line, male, male-specific anatomical entity"	No
+WBGene00003465	msp-78	protein_coding_gene	"hermaphrodite gonad, male gonad, oocyte, sperm, spermatheca, uterus"	"amphid sheath cell, germ line, male-specific anatomical entity"	No
+WBGene00003469	msp-142	protein_coding_gene	"hermaphrodite gonad, male gonad, oocyte, sperm, spermatheca, uterus"	"amphid sheath cell, male"	No
+WBGene00003470	msp-152	protein_coding_gene	"hermaphrodite gonad, male gonad, oocyte, sperm, spermatheca, uterus"	"amphid sheath cell, male, male-specific anatomical entity"	No
+WBGene00003477	mtm-5	protein_coding_gene	"body wall musculature, intestine, pharynx"	"body wall musculature, intestine, muscle cell, pharynx"	No
+WBGene00003522	nas-3	protein_coding_gene	"hyp1, ILsoDL, ILsoDR, ILsoL, ILsoR, ILsoVL, ILsoVR, intestine, PDEL, PDER, pm3, pm4, pm5, seam cell"	male-specific anatomical entity	No
+WBGene00003538	nas-19	protein_coding_gene	"intestine, marginal cell, pharyngeal muscle cell, pharynx, rectal gland cell, reproductive system, spermatheca, vulva"	"male, male-specific anatomical entity"	No
+WBGene00003551	nas-33	protein_coding_gene	"hyp10, hyp11, hyp12, hyp8, hyp9, intestine"	excretory cell	No
+WBGene00003675	nhr-85	protein_coding_gene	"excretory duct cell, hypodermis, rectal epithelium, vulva"	somatic gonad precursor	No
+WBGene00003676	nhr-86	protein_coding_gene	"hypodermis, pharynx"	"intestine, somatic gonad precursor"	No
+WBGene00003679	nhr-89	protein_coding_gene	seam cell	intestine	No
+WBGene00003707	nhr-117	protein_coding_gene	"hypodermis, intestine, pharyngeal-intestinal valve, rectal muscle, terminal bulb"	"CEPshDL, CEPshDR, CEPshVL, CEPshVR, intestine"	No
+WBGene00003709	nhr-119	protein_coding_gene	"hypodermis, intestine"	"body wall musculature, somatic gonad precursor"	No
+WBGene00003719	nhr-129	protein_coding_gene	"pharynx, seam cell"	"intestine, somatic gonad precursor"	No
+WBGene00003722	nhr-132	protein_coding_gene	"excretory cell, vulva"	"coelomocyte, intestine, somatic gonad precursor"	No
+WBGene00003731	nhx-3	protein_coding_gene	"excretory pore, hyp7 syncytium, hypodermis, socket cell, spermathecal-uterine junction, ut1"	hypodermis	No
+WBGene00003764	nlp-26	protein_coding_gene	hypodermis	"hypodermis, intestine"	No
+WBGene00003813	nrf-6	protein_coding_gene	"hyp1, hyp10, hyp11, hyp12, hyp2, hyp3, hyp4, hyp5, hyp6, hyp7 syncytium, hyp8, hyp9, intestine"	"gon_male_dtc anterior, gon_male_dtc posterior, intestine, somatic gonad precursor, Z1, Z1.p, Z4, Z4.a"	No
+WBGene00003868	ooc-3	protein_coding_gene	P0	"germ line, intestine"	No
+WBGene00003877	pept-1	protein_coding_gene	intestine	"head mesodermal cell, intestine"	No
+WBGene00003912	pal-1	protein_coding_gene	"AB, ABa, ABp, ABplpappp, ABplpapppa, ABplpapppp, ABplppppp, ABplpppppa, ABplpppppp, ABplppppppp, ABprppppp, ABprpppppa, ABprpppppaa, ABprpppppp, ABprppppppp, anal depressor muscle, C, Ca, Caa, Caaa, Caaaa, Caaaaa, Caaaap, Caaap, Caaapa, Caaapp, Caap, Caapa, Caapp, Caappd, Cap, Capa, Capaa, Capap, Capp, Cappa, Cappaa, Cappap, Cappp, Capppa, Capppp, Cp, Cpa, Cpaa, Cpaaa, Cpaaaa, Cpaaap, Cpaap, Cpaapa, Cpaapp, Cpap, Cpapa, Cpapaa, Cpapap, Cpapp, Cpappd, Cpp, Cppa, Cppaa, Cppap, Cppp, Cpppa, Cpppaa, Cpppap, Cpppp, Cppppa, Cppppp, D, Da, Daa, Daaa, Daap, Dap, Dapa, Dapp, Dp, Dpa, Dpaa, Dpap, Dpp, Dppa, Dppp, E, Ea, EMS, Ep, gonad, intestine, K cell, K' cell, M cell, MS, MSa, MSp, mu_int_L, mu_int_R, oocyte, P0, P10, P11, P12, P8, P9, Psub1, Psub2, Psub3, Psub4, spike precursor left, spike precursor right"	"germ line, head mesodermal cell"	No
+WBGene00003918	par-3	protein_coding_gene	"AB, ABa, ABp, EMS, excretory canal, excretory cell, gonadal sheath cell, P0, Psub1, spermatheca, uterus, vulA, vulB1, vulB2, vulC, vulD, vulE, vulF"	"AB, germ line, head mesodermal cell"	No
+WBGene00003919	par-4	protein_coding_gene	"Cell, gonad"	hypodermis	No
+WBGene00003937	pax-1	protein_coding_gene	"e2, epithelial cell, marginal cell, mc1, mc2, mc3, pharyngeal cell, pm8, vpi1"	pharynx	No
+WBGene00003983	pes-10	protein_coding_gene	"ABa, ABp, EMS"	"hypodermis, pharyngeal muscle cell"	No
+WBGene00003994	pgl-3	protein_coding_gene	"germ line, Psub1"	"germ line, germline precursor cell, head mesodermal cell, Psub1"	No
+WBGene00004008	pgp-14	protein_coding_gene	pharynx	"arcade cell, pharyngeal muscle cell, pharyngeal-intestinal valve cell"	No
+WBGene00004028	pif-1	protein_coding_gene	intestine	"CEPshDL, CEPshDR, CEPshVL, CEPshVR, germ line, gon_male_dtc anterior, gon_male_dtc posterior, head mesodermal cell, hypodermis, Z1.p, Z4.a"	No
+WBGene00004034	pkc-3	protein_coding_gene	"anal depressor muscle, anal sphincter muscle, anterior hypodermis, D, hypodermal cell, intestinal cell, muscle cell, pharyngeal cell, pharyngeal-intestinal valve, Psub4, spermathecal cell, tail hypodermis, vulva"	germ line	No
+WBGene00004155	pqn-73	protein_coding_gene	arcade cell	"pharynx, Z1, Z4"	No
+WBGene00004201	prx-19	protein_coding_gene	pharynx	"body wall muscle cell, germ line, germline precursor cell, intestine"	No
+WBGene00004222	ptr-8	protein_coding_gene	"hypodermis, rectum"	"gon_male_dtc anterior, gon_male_dtc posterior, somatic gonad precursor, Z1.p, Z4.a"	No
+WBGene00004334	ref-1	protein_coding_gene	"ABalpa, ABalpp, ABaraa, ABaraaa, ABaraaaa, ABaraaaaa, ABaraaaap, ABaraaap, ABaraaapa, ABaraaapp, ABaraap, ABaraapa, ABaraapaa, ABaraapap, ABaraapp, ABaraappa, ABaraappp, ABarap, ABarpa, ABarpp, ABpla, ABplp, ABplpa, ABplpp, ABpra, ABprp, ABprpa, ABprpp, E lineage cell, e2V, Ea, embryonic cell, Ep, hypodermis, intestine, mc3V, MSa, MSp, pharyngeal cell, pharyngeal-intestinal valve, pm8, seam cell"	"germ line, hypodermis"	No
+WBGene00004416	rpl-5	protein_coding_gene	"hyp7 syncytium, int1DL, int1DR, int1VL, int1VR, int2D, int2V, int3D embryonic, int3V embryonic, int4D embryonic, int4V embryonic, int5L embryonic, int5R embryonic, int6L embryonic, int6R embryonic, int7L embryonic, int7R embryonic, int8L embryonic, int8R embryonic, int9L embryonic, int9R embryonic, intestine, pharyngeal cell"	"germ line, somatic gonad precursor"	No
+WBGene00004459	rpn-2	protein_coding_gene	intestine	"CEPshDL, CEPshDR, CEPshVL, CEPshVR, germ line, muscle cell"	No
+WBGene00004465	rpn-9	protein_coding_gene	"intestine, rectal gland cell"	"germ line, germline precursor cell, somatic gonad precursor"	No
+WBGene00004753	sec-8	protein_coding_gene	"embryonic cell, excretory canal, hypodermis"	"body wall musculature, coelomocyte, germ line, intestine"	No
+WBGene00004759	sel-1	protein_coding_gene	"intestine, P3.p hermaphrodite, P4.p hermaphrodite, P5.p hermaphrodite, P6.p hermaphrodite, P7.p hermaphrodite, P8.p hermaphrodite"	"germ line, germline precursor cell"	No
+WBGene00004783	seu-1	protein_coding_gene	"anterior distal tip cell, body wall musculature, hypodermis, intestine, pharynx, posterior distal tip cell, spermatheca, ventral nerve cord"	germ line	No
+WBGene00004787	sft-1	protein_coding_gene	body wall musculature	"germ line, hypodermis, intestine, somatic gonad precursor"	No
+WBGene00004816	skr-10	protein_coding_gene	intestine	"hypodermis, pharyngeal muscle cell"	No
+WBGene00004896	smu-2	protein_coding_gene	Cell	"body wall muscle cell, excretory cell, germ line"	No
+WBGene00004909	snf-10	protein_coding_gene	"germ line, secondary spermatocyte, sperm, spermatid, spermatocyte"	"amphid sheath cell, male"	No
+WBGene00004931	sod-2	protein_coding_gene	"head, tail"	"germ line, somatic gonad precursor"	No
+WBGene00004999	spp-14	protein_coding_gene	male	"head mesodermal cell, intestine, pharyngeal muscle cell"	No
+WBGene00005019	sqv-1	protein_coding_gene	"coelomocyte, oocyte, uterine toroidal epithelial cell, uterus, vulA, vulB1, vulB2, vulC, vulD, vulE, vulF, vulva"	"germ line, germline precursor cell, head mesodermal cell, hypodermis, intestine, Psub1"	No
+WBGene00005228	srh-2	protein_coding_gene	"body wall musculature, Eala, Ealp, Eara, Earp, Epl, Epla, Eplp, Epr, Epra, Eprp, int1DL, int1DR, int1VL, int1VR, int2D, int2V, int3D embryonic, int3V embryonic, int4D embryonic, int4V embryonic, int5L embryonic, int5R embryonic, int6L embryonic, int6R embryonic, int7L embryonic, int7R embryonic, int8L embryonic, int8R embryonic, int9L embryonic, int9R embryonic, intestine"	somatic gonad precursor	No
+WBGene00005887	srw-140	protein_coding_gene	"R1AL, R1AR, R1BL, R1BR, R1stL, R1stR, R2AL, R2AR, R2BL, R2BR, R2stL, R2stR, R3AL, R3AR, R3BL, R3BR, R3stL, R3stR, R4AL, R4AR, R4BL, R4BR, R4stL, R4stR, R5AL, R5AR, R5BL, R5BR, R5stL, R5stR, R6AL, R6AR, R6BL, R6BR, R6stL, R6stR, R7AL, R7AR, R7BL, R7BR, R7stL, R7stR, R8AL, R8AR, R8BL, R8BR, R8stL, R8stR, R9AL, R9AR, R9BL, R9BR, R9stL, R9stR"	ray	No
+WBGene00006349	sur-2	protein_coding_gene	"P1.p, P10.p, P11.p, P12.p, P2.p, P3.p hermaphrodite, P3.pa, P3.pp, P4.p hermaphrodite, P4.pa, P4.pp, P5.p hermaphrodite, P5.pa, P5.paa, P5.pap, P5.pp, P5.ppa, P5.ppp, P6.p hermaphrodite, P6.pa, P6.paa, P6.pap, P6.pp, P6.ppa, P6.ppp, P7.p hermaphrodite, P7.pa, P7.paa, P7.pap, P7.pp, P7.ppa, P7.ppp, P8.p hermaphrodite, P8.pa, P8.pp, P9.p, vulA, vulB1, vulB2, vulC, vulD, vulE, vulF"	"germ line, somatic gonad precursor"	No
+WBGene00006452	heh-1	protein_coding_gene	body wall musculature	"body wall musculature, cephalic sheath cell, head mesodermal cell, intestine, muscle cell"	No
+WBGene00006494	zipt-7.2	protein_coding_gene	somatic cell	intestine	No
+WBGene00006546	tbx-9	protein_coding_gene	"ABarpa, ABarpp, ABplaa, body wall musculature, Ca, Cp, E, Ea, Eal, Ear, Ep, Epl, Epr, hypodermis, intestinal cell, MSaappa, MSaappp, MSpapaa, MSpapap, muscle cell"	"germ line, gon_male_dtc anterior, gon_male_dtc posterior, Z1, Z1.p, Z4, Z4.a"	No
+WBGene00006603	tps-2	protein_coding_gene	"body wall musculature, muscle cell, reproductive system, vulval muscle"	"intestine, muscle cell, somatic gonad precursor"	No
+WBGene00006611	tre-5	protein_coding_gene	"head, hypodermis"	"amphid sheath cell, seam cell, somatic gonad precursor"	No
+WBGene00006641	tsp-15	protein_coding_gene	"body wall musculature, hyp7 syncytium, pharynx, seam cell, vulva"	"germline precursor cell, muscle cell, somatic gonad precursor"	No
+WBGene00006675	twk-22	protein_coding_gene	pharynx	"gon_male_dtc anterior, gon_male_dtc posterior, somatic gonad precursor, Z1, Z1.p, Z4, Z4.a"	No
+WBGene00006816	unc-84	protein_coding_gene	"Cell, oocyte"	"CEPshDL, CEPshDR, CEPshVL, CEPshVR, germ line, gon_male_dtc anterior, gon_male_dtc posterior, intestine, Z1.p, Z4.a"	No
+WBGene00006817	unc-85	protein_coding_gene	"Cell, germ line"	"germ line, intestine, somatic gonad precursor"	No
+WBGene00007060	wht-6	protein_coding_gene	intestine	"gon_male_dtc anterior, gon_male_dtc posterior, hermaphrodite-specific anatomical entity, male, Z1.p, Z4.a"	No
+WBGene00007081	AH6.3	protein_coding_gene	"R1AL, R1AR, R1BL, R1BR, R1stL, R1stR, R2AL, R2AR, R2BL, R2BR, R2stL, R2stR, R3AL, R3AR, R3BL, R3BR, R3stL, R3stR, R4AL, R4AR, R4BL, R4BR, R4stL, R4stR, R5AL, R5AR, R5BL, R5BR, R5stL, R5stR, R6AL, R6AR, R6BL, R6BR, R6stL, R6stR, R7AL, R7AR, R7BL, R7BR, R7stL, R7stR, R8AL, R8AR, R8BL, R8BR, R8stL, R8stR, R9AL, R9AR, R9BL, R9BR, R9stL, R9stR"	"germ line, male, ray"	No
+WBGene00007120	B0250.3	pseudogene	intestine	"germ line, somatic gonad precursor"	No
+WBGene00007171	B0393.6	protein_coding_gene	"intestine, rectal gland cell, reproductive system, vulva"	"germ line, germline precursor cell, head mesodermal cell, pharyngeal muscle cell"	No
+WBGene00007215	oxa-1	protein_coding_gene	"body wall musculature, pharyngeal muscle cell"	"germ line, intestine"	No
+WBGene00007330	C05C10.3	protein_coding_gene	"anal depressor muscle, body wall musculature, pharynx, reproductive system, vulval muscle"	"coelomocyte, germline precursor cell"	No
+WBGene00007500	nasp-1	protein_coding_gene	"metacorpus, pharynx, terminal bulb"	germ line	No
+WBGene00007505	pezo-1	protein_coding_gene	"germ line, gonadal sheath cell, pharyngeal-intestinal valve, somatic gonad, sperm, spermatheca, spermathecal-uterine valve cell"	somatic gonad precursor	No
+WBGene00007642	C17E4.2	protein_coding_gene	"head, intestine, vulval muscle"	"germ line, hypodermis, pharynx, somatic gonad precursor"	No
+WBGene00007711	lid-1	protein_coding_gene	intestinal cell	"germ line, muscle cell, somatic gonad precursor"	No
+WBGene00007952	C35A5.8	protein_coding_gene	Cell	"body wall muscle cell, germ line"	No
+WBGene00007985	swah-1	protein_coding_gene	intestine	"germ line, germline precursor cell, head mesodermal cell, pharyngeal muscle cell"	No
+WBGene00008153	C47E12.10	protein_coding_gene	intestine	"germ line, male"	No
+WBGene00008514	mrpl-44	protein_coding_gene	"metacorpus, pm4, pm7, terminal bulb"	germ line	No
+WBGene00008647	F10C2.7	protein_coding_gene	intestine	amphid sheath cell	No
+WBGene00008848	inft-2	protein_coding_gene	excretory cell	"germ line, germline precursor cell, somatic gonad precursor"	No
+WBGene00008857	timm-23	protein_coding_gene	pharynx	"germ line, muscle cell"	No
+WBGene00009029	F21H7.3	protein_coding_gene	body wall musculature	"excretory cell, muscle cell"	No
+WBGene00009115	F25F2.1	protein_coding_gene	intestine	"germ line, male, somatic gonad precursor"	No
+WBGene00009145	F26A3.7	protein_coding_gene	spermatheca	"germ line, intestine"	No
+WBGene00009368	pole-1	protein_coding_gene	"intestine, seam cell"	"germ line, gon_male_dtc anterior, gon_male_dtc posterior, head mesodermal cell, Z1.p, Z4.a"	No
+WBGene00009386	tag-290	protein_coding_gene	"arcade cell, pharynx"	hermaphrodite-specific anatomical entity	No
+WBGene00009475	F36F2.1	protein_coding_gene	pharynx	"body wall muscle cell, intestine, muscle cell"	No
+WBGene00009518	clec-166	protein_coding_gene	rectum	intestine	No
+WBGene00009565	F39H11.1	protein_coding_gene	"body wall musculature, intestine, pharynx, reproductive system, spermatheca, vulva, vulval muscle"	germ line	No
+WBGene00009626	F42A8.1	protein_coding_gene	"head, intestine, vulva"	"germ line, gon_male_dtc anterior, gon_male_dtc posterior, hypodermis, Z1, Z1.p, Z4, Z4.a"	No
+WBGene00009807	pepm-1	protein_coding_gene	"P5.ppal, P5.ppar, P7.papl, P7.papr, vulC, vulD, vulE, vulF"	"germ line, hypodermis"	No
+WBGene00009896	scl-3	protein_coding_gene	"g1AL, g1AR, g1P, g2L, g2R"	amphid sheath cell	No
+WBGene00010258	F58E6.11	protein_coding_gene	pharynx	"intestine, male-specific anatomical entity"	No
+WBGene00010314	F59B2.12	protein_coding_gene	"body wall musculature, coelomocyte, G1, head, vas deferens"	"germ line, male, male-specific anatomical entity"	No
+WBGene00010336	acox-1.6	protein_coding_gene	"intestine, pharynx"	"germline precursor cell, head mesodermal cell, intestine"	No
+WBGene00010406	math-33	protein_coding_gene	"Cell, germ cell, germ line"	germ line	No
+WBGene00010440	ttr-51	protein_coding_gene	spermatheca	"head mesodermal cell, muscle cell"	No
+WBGene00010442	bus-12	protein_coding_gene	"head, intestine, seam cell"	hypodermis	No
+WBGene00010661	tyr-2	protein_coding_gene	"hypodermis, uterine muscle"	"germline precursor cell, intestine"	No
+WBGene00010759	cysl-2	protein_coding_gene	"hypodermis, pharynx"	"germ line, germline precursor cell, intestine"	No
+WBGene00010834	mct-3	protein_coding_gene	"hypodermis, pharynx, vulva"	"germline precursor cell, muscle cell, somatic gonad precursor"	No
+WBGene00010983	mocs-1	protein_coding_gene	"amphid sheath cell, head, intestine, socket cell"	"CEPshDL, CEPshDR, CEPshVL, CEPshVR, intestine"	No
+WBGene00011106	acl-5	protein_coding_gene	"body wall musculature, head"	intestine	No
+WBGene00011281	R74.7	protein_coding_gene	"body wall musculature, intestine, tail"	"germ line, germline precursor cell, intestine"	No
+WBGene00011329	zipt-9	protein_coding_gene	seam cell	germ line	No
+WBGene00011469					No
+WBGene00011580	ddx-19	protein_coding_gene	"excretory cell, hypodermis, rectal epithelium, tail"	"germ line, head mesodermal cell, hermaphrodite-specific anatomical entity"	No
+WBGene00011647	noca-1	protein_coding_gene	"hyp7 syncytium, intestinal cell"	"excretory cell, germ line, head mesodermal cell, hypodermis, muscle cell, pharyngeal muscle cell, somatic gonad precursor"	No
+WBGene00011731	acbp-5	protein_coding_gene	"intestine, pharynx"	"germ line, germline precursor cell"	No
+WBGene00011908	pash-1	protein_coding_gene	"head, hypodermis, intestine, marginal cell, pharyngeal muscle cell"	"germ line, germline precursor cell, intestine"	No
+WBGene00011910	alg-3	protein_coding_gene	germ line	"amphid sheath cell, body wall musculature, intestine, male, somatic gonad precursor"	No
+WBGene00012173	W01B6.6	protein_coding_gene	gonad	male	No
+WBGene00012608	hphd-1	protein_coding_gene	"anal depressor muscle, body wall musculature, hypodermis, intestine, pharynx, reproductive system, vulva"	"anal depressor muscle, body wall musculature, cephalic sheath cell, coelomocyte, intestine, pharynx, somatic gonad precursor, vulval muscle"	No
+WBGene00012804	slc-36.1	protein_coding_gene	"anal depressor muscle, body wall musculature, germ line, head, hypodermis, intestine, pharynx"	"coelomocyte, germ line, head mesodermal cell"	No
+WBGene00012868	tbc-9	protein_coding_gene	"intestine, pharynx"	germ line	No
+WBGene00012923	fbxa-128	protein_coding_gene	pharyngeal-intestinal valve	"coelomocyte, intestine, Z1, Z4"	No
+WBGene00012927	Y47D3A.14	protein_coding_gene	"Pharyngeal gland cell, pm7"	germ line	No
+WBGene00012929	rsks-1	protein_coding_gene	"Eal, Eala, Ealaa, Ealp, Ear, Eara, Earaa, Earp, Epl, Epla, Eplp, Eplpp, Epr, Epra, Eprp, Eprpp, hypodermis, intestine, pharynx"	"body wall muscle cell, germ line"	No
+WBGene00012933	mib-1	protein_coding_gene	vulva	"germ line, intestine"	No
+WBGene00012995	Y48C3A.14	protein_coding_gene	"head, intestine"	germ line	No
+WBGene00013034	tat-1	protein_coding_gene	"Cell, intestine"	germ line	No
+WBGene00013122	impt-1	protein_coding_gene	intestine	germ line	No
+WBGene00013128	dxbp-1	protein_coding_gene	"Cell, somatic cell"	"coelomocyte, germ line"	No
+WBGene00013135	rga-2	protein_coding_gene	"rectum, socket cell, uterus, vulva"	"coelomocyte, head mesodermal cell, hypodermis"	No
+WBGene00013147	eyg-1	protein_coding_gene	"head, pharynx"	ray	No
+WBGene00013223	efa-6	protein_coding_gene	"linker cell, U.la, U.lp"	"coelomocyte, germ line, head mesodermal cell, muscle cell"	No
+WBGene00013227	Y56A3A.6	protein_coding_gene	germ line	"head mesodermal cell, intestine, pharyngeal muscle cell"	No
+WBGene00013228	Y56A3A.7	protein_coding_gene	"excretory system, hypodermis, intestine, pharynx, somatic gonad, spermatheca"	head mesodermal cell	No
+WBGene00013433	Y66D12A.7	protein_coding_gene	"hypodermis, tail"	germ line	No
+WBGene00013460	cpsf-3	protein_coding_gene	"excretory cell, intestine, spermathecal-uterine junction, tail"	"body wall muscle cell, germ line, somatic gonad precursor"	No
+WBGene00013497	hex-5	protein_coding_gene	"head muscle, tail, vulva"	"hermaphrodite-specific anatomical entity, hypodermis, intestine, pharyngeal muscle cell"	No
+WBGene00013674	Y105E8A.14	protein_coding_gene	"intestine, marginal cell, pharyngeal muscle cell, rectal gland cell"	"germ line, germline precursor cell, somatic gonad precursor"	No
+WBGene00013809	Y116A8C.33	protein_coding_gene	intestine	male	No
+WBGene00013835	mlt-4	protein_coding_gene	"hyp7 syncytium, hypodermis"	"germline precursor cell, muscle cell"	No
+WBGene00013870	ZC373.5	protein_coding_gene	"body wall musculature, head mesodermal cell, hypodermis, intestine, pharynx, rectal gland cell, reproductive system, seam cell, tail, vulva"	"CEPshDL, CEPshDR, CEPshVL, CEPshVR, intestine, pharyngeal muscle cell, somatic gonad precursor"	No
+WBGene00013983	ZK512.2	protein_coding_gene	"anal depressor muscle, body wall musculature, head, hypodermis, intestine, pharynx, reproductive system, tail, vulval muscle"	"body wall muscle cell, body wall musculature, germ line, intestine, pharynx, somatic gonad precursor"	No
+WBGene00014004	fic-1	protein_coding_gene	Cell	"germ line, germline precursor cell, head mesodermal cell, intestine"	No
+WBGene00014009	lips-6	protein_coding_gene	intestine	hypodermis	No
+WBGene00014012	riok-3	protein_coding_gene	intestine	"germ line, somatic gonad precursor"	No
+WBGene00014034	ZK643.2	protein_coding_gene	hypodermis	"germ line, somatic gonad precursor"	No
+WBGene00014082	ZK795.2	protein_coding_gene	germ line	"gon_male_dtc anterior, gon_male_dtc posterior, male, Z1.p, Z4.a"	No
+WBGene00014098	ogdh-2	protein_coding_gene	body wall musculature	"germ line, somatic gonad precursor"	No
+WBGene00014131	sdz-38	protein_coding_gene	"Ea, Ep, MSa, MSaa, MSap, MSp, MSpa, MSpp"	"muscle cell, pharynx"	No
+WBGene00014141	ZK899.2	protein_coding_gene	"buccal cavity, rectum, vulva"	"gon_male_dtc anterior, gon_male_dtc posterior, intestine, Z1, Z1.p, Z4, Z4.a"	No
+WBGene00014206	nit-1	protein_coding_gene	"E, Ea, Ep, MS, MSa, MSaa, MSap, MSp, MSpa, MSpp"	"germline precursor cell, hypodermis, intestine, muscle cell"	No
+WBGene00014228	mett-10	protein_coding_gene	"anterior distal tip cell, germ line, gonadal sheath cell, intestine, posterior distal tip cell, somatic gonad, spermatheca, vulva"	germ line	No
+WBGene00014987	ZK637.6	pseudogene	"hypodermis, pharynx"	"germ line, somatic gonad precursor"	No
+WBGene00015002	B0034.1	protein_coding_gene	"hypodermis, P5.ppal, P5.ppar, rectal gland cell, tail, vulC, vulE, vulF"	"Z1, Z4"	No
+WBGene00015129	sdz-1	protein_coding_gene	"E, Ea, Ep, MS, MSa, MSaa, MSap, MSp, MSpa, MSpp, Z1, Z4"	"gon_male_dtc anterior, gon_male_dtc posterior, Z1.p, Z4.a"	No
+WBGene00015184	djr-1.1	protein_coding_gene	intestine	"germ line, germline precursor cell, somatic gonad precursor"	No
+WBGene00015282	C01B10.8	protein_coding_gene	intestine	germ line	No
+WBGene00015308	ddi-1	protein_coding_gene	Cell	"germ line, somatic gonad precursor"	No
+WBGene00015337	gsto-2	protein_coding_gene	"head, intestine, tail"	"muscle cell, pharynx"	No
+WBGene00015396	nhr-148	protein_coding_gene	"head, intestine, rectal epithelium, reproductive system, seam cell, vulva"	"gon_male_dtc anterior, gon_male_dtc posterior, somatic gonad precursor, Z1, Z1.p, Z4, Z4.a"	No
+WBGene00015429	sor-3	protein_coding_gene	Cell	"hypodermis, intestine"	No
+WBGene00015497	nhr-76	protein_coding_gene	"body wall musculature, excretory gland cell, head, intestine, pharynx, seam cell, vulval muscle"	"gon_male_dtc anterior, gon_male_dtc posterior, intestine, somatic gonad precursor, Z1, Z1.p, Z4, Z4.a"	No
+WBGene00015505	C06A5.8	protein_coding_gene	"germ line, oocyte"	"germ line, germline precursor cell, head mesodermal cell"	No
+WBGene00015519	doxa-1	protein_coding_gene	"gonad, hypodermis, seam cell, spermatheca, terminal bulb, uterus, vulva"	"body wall musculature, intestine, somatic gonad precursor"	No
+WBGene00016053	ptp-5.1	protein_coding_gene	head	"germ line, male"	No
+WBGene00016088	clec-266	protein_coding_gene	intestinal cell	"germ line, head mesodermal cell, intestine, pharyngeal muscle cell, pharynx"	No
+WBGene00016171	C27F2.10	protein_coding_gene	pharynx	"germ line, germline precursor cell"	No
+WBGene00016344	rsef-1	protein_coding_gene	"G1, spermathecal-uterine junction, uterus"	"CEPshDL, CEPshDR, CEPshVL, CEPshVR, male"	No
+WBGene00016534	C39D10.7	protein_coding_gene	germ line	"cephalic sheath cell, germ line"	No
+WBGene00016622	mafr-1	protein_coding_gene	"hypodermis, intestine"	germ line	No
+WBGene00016681	C45G9.10	protein_coding_gene	intestine	"germ line, male, male-specific anatomical entity"	No
+WBGene00016697	cyp-33C2	protein_coding_gene	intestine	amphid sheath cell	No
+WBGene00017244	apy-1	protein_coding_gene	"hypodermis, pharynx"	"germ line, head mesodermal cell, intestine, pharyngeal muscle cell"	No
+WBGene00017261	acl-6	protein_coding_gene	muscle cell	"germline precursor cell, intestine"	No
+WBGene00017274	F08F8.9	protein_coding_gene	intestine	"body wall muscle cell, germ line"	No
+WBGene00017435	F13H8.2	protein_coding_gene	Cell	germ line	No
+WBGene00017916	F29A7.6	protein_coding_gene	Cell	"germ line, intestine, somatic gonad precursor"	No
+WBGene00017923	F29B9.8	protein_coding_gene	"Cell, hypodermis, rectal epithelial cell"	"coelomocyte, germ line, muscle cell"	No
+WBGene00018099	ztf-28	protein_coding_gene	intestine	"germ line, germline precursor cell"	No
+WBGene00018137	bath-41	protein_coding_gene	intestine	germ line	No
+WBGene00018283	sulp-3	protein_coding_gene	"pm3, pm4, pm5, pm6, pm7"	somatic gonad precursor	No
+WBGene00018340	anmt-2	protein_coding_gene	"ABalpaaapa, ABalpaapap, ABaraapapa, MSaaaapp, MSaaapaa, MSpaaapp, pharynx, pm2, pm3, pm4, pm5, pm6, pm7"	"body wall musculature, head mesodermal cell, muscle cell, pharyngeal muscle cell"	No
+WBGene00018405	F44A2.5	protein_coding_gene	"metacorpus, pharynx, procorpus"	"excretory cell, head mesodermal cell, muscle cell, pharyngeal muscle cell, pharynx"	No
+WBGene00018408	F44B9.5	protein_coding_gene	"intestine, vulA, vulB1, vulB2"	germ line	No
+WBGene00018446	ceh-83	protein_coding_gene	"hypodermis, intestine, vulva"	"germ line, gon_male_dtc anterior, gon_male_dtc posterior, somatic gonad precursor, Z1, Z1.p, Z4, Z4.a"	No
+WBGene00018459	F45D11.14	protein_coding_gene	"hypodermis, intestine"	"hermaphrodite-specific anatomical entity, muscle cell"	No
+WBGene00018474	cnep-1	protein_coding_gene	"intestine, pharynx"	"cephalic sheath cell, germ line"	No
+WBGene00018538	marg-1	protein_coding_gene	"arcade cell, excretory cell, marginal cell, pharyngeal epithelial cell"	germ line	No
+WBGene00018547	clec-78	protein_coding_gene	pharyngeal muscle cell	"hypodermis, somatic gonad precursor"	No
+WBGene00018621	F48G7.10	protein_coding_gene	tail	"gon_male_dtc anterior, gon_male_dtc posterior, somatic gonad precursor, Z1, Z1.p, Z4, Z4.a"	No
+WBGene00018779	F53H8.3	protein_coding_gene	"E, Ea, Eal, Eala, Ealaa, Ealp, Ear, Eara, Earaa, Earp, Ep, Epl, Epla, Eplp, Eplpp, Epr, Epra, Eprp, Eprpp, int1DL, int1DR, int1VL, int1VR, int2D, int2V, int3D embryonic, int3V embryonic, int4D embryonic, int4V embryonic, int5L embryonic, int5R embryonic, int6L embryonic, int6R embryonic, int7L embryonic, int7R embryonic, int8L embryonic, int8R embryonic, int9L embryonic, int9R embryonic"	intestine	No
+WBGene00018961	mrps-16	protein_coding_gene	pharynx	"germ line, muscle cell"	No
+WBGene00019002	syp-6	protein_coding_gene	germ line	"germ line, germline precursor cell, head mesodermal cell"	No
+WBGene00019151	pck-3	protein_coding_gene	excretory cell	"germ line, male"	No
+WBGene00019182	H10E21.1	protein_coding_gene	"hyp10, hyp11, hyp8, hyp9, intestine, spike precursor left, spike precursor right, virL, virR"	"germline precursor cell, intestine, pharyngeal muscle cell, somatic gonad precursor"	No
+WBGene00019455	K06H7.1	protein_coding_gene	intestine	somatic gonad precursor	No
+WBGene00019624	rnst-2	protein_coding_gene	"body wall musculature, hypodermis, intestine, neuronal sheath cell, pharynx, tail, vulva"	"body wall muscle cell, muscle cell, pharyngeal muscle cell, somatic gonad precursor"	No
+WBGene00019627	hira-1	protein_coding_gene	Cell	germ line	No
+WBGene00019787	M70.5	protein_coding_gene	pharynx	germ line	No
+WBGene00019813	ger-1	protein_coding_gene	"pharynx, seam cell, spermatheca"	intestine	No
+WBGene00019826	R02E4.1	protein_coding_gene	"anal depressor muscle, anal sphincter muscle, anterior distal tip cell, head mesodermal cell, posterior distal tip cell, rectal epithelium, vulval muscle"	"head mesodermal cell, Z1, Z4"	No
+WBGene00019947	htz-1	protein_coding_gene	"Cell, distal tip cell, somatic gonad"	"germ line, somatic gonad precursor"	No
+WBGene00019977	fpn-1.2	protein_coding_gene	pharynx	"intestine, somatic gonad precursor"	No
+WBGene00020065	clec-159	pseudogene	"body wall musculature, head, pharyngeal-intestinal valve, pharynx, tail"	"intestine, male-specific anatomical entity"	No
+WBGene00020066	dhhc-5	protein_coding_gene	"excretory cell, intestine"	"gon_male_dtc anterior, gon_male_dtc posterior, male, Z1.p, Z4.a"	No
+WBGene00020216	trap-2	protein_coding_gene	"Cell, pharynx"	"head mesodermal cell, intestine"	No
+WBGene00020296	rrp-8	protein_coding_gene	Cell	"germ line, somatic gonad precursor"	No
+WBGene00020375	pigv-1	protein_coding_gene	"excretory cell, hypodermis, intestine, pharynx, rectal epithelium"	"AB, germ line, germline precursor cell, head mesodermal cell, hypodermis"	No
+WBGene00020423	prp-19	protein_coding_gene	intestine	germ line	No
+WBGene00020587	ugt-9	protein_coding_gene	pharyngeal cell	intestine	No
+WBGene00020705	T22H9.1	protein_coding_gene	intestine	"body wall muscle cell, germ line, somatic gonad precursor"	No
+WBGene00020725	cnp-3	protein_coding_gene	"hypodermis, intestine, spermatheca, uterus"	germline precursor cell	No
+WBGene00020796	mrpl-28	protein_coding_gene	"coelomocyte, hypodermis, intestine, pharynx, spermatheca"	"body wall muscle cell, germ line, intestine"	No
+WBGene00020812	acdh-7	protein_coding_gene	"anterior gonad arm, intestine, pharynx"	"intestine, muscle cell, somatic gonad precursor"	No
+WBGene00020962	W02H5.8	protein_coding_gene	intestine	hypodermis	No
+WBGene00021000	W03F9.2	protein_coding_gene	"anal region, body wall, digestive tract, germ line, head, midbody, tail"	"germ line, head mesodermal cell, intestine"	No
+WBGene00021055	W06A11.4	pseudogene	intestinal cell	"body wall muscle cell, germ line, germline precursor cell"	No
+WBGene00021073	nsun-1	protein_coding_gene	Cell	"germ line, seam cell"	No
+WBGene00021107	W09B7.2	protein_coding_gene	intestinal cell	germline precursor cell	No
+WBGene00021163	nhr-275	protein_coding_gene	"anal region, head"	"CEPshDL, CEPshDR, CEPshVL, CEPshVR"	No
+WBGene00021170	arx-4	protein_coding_gene	"head, intestine, pharynx, tail"	germ line	No
+WBGene00021227	mct-1	protein_coding_gene	pharynx	"germline precursor cell, head mesodermal cell, hermaphrodite-specific anatomical entity"	No
+WBGene00021533	Y42G9A.3	protein_coding_gene	"hypodermis, intestine, seam cell"	"body wall musculature, intestine, muscle cell, pharynx"	No
+WBGene00021579	clec-73	protein_coding_gene	intestine	"germ line, male, male-specific anatomical entity"	No
+WBGene00021613	ttc-37	protein_coding_gene	"body wall musculature, pharynx"	"germ line, germline precursor cell"	No
+WBGene00021626	rft-2	protein_coding_gene	intestine	germ line	No
+WBGene00021840	pign-1	protein_coding_gene	"body wall musculature, hypodermis, intestine, pharynx"	"coelomocyte, germ line, head mesodermal cell, intestine, muscle cell"	No
+WBGene00021869	vrp-1	protein_coding_gene	intestinal cell	"body wall muscle cell, intestine, somatic gonad precursor"	No
+WBGene00021870	samt-1	protein_coding_gene	"intestine, Pharyngeal gland cell, seam cell"	"head mesodermal cell, hypodermis, intestine"	No
+WBGene00021969	Y57G7A.6	protein_coding_gene	hypodermis	"germ line, male"	No
+WBGene00022348	Y82E9BR.16	protein_coding_gene	germ line	intestine	No
+WBGene00022459	Y110A7A.9	protein_coding_gene	"head, intestine, pharynx, rectal gland cell"	"CEPshDL, CEPshDR, CEPshVL, CEPshVR, germ line, intestine"	No
+WBGene00022491	Y119D3B.14	protein_coding_gene	intestine	germ line	No
+WBGene00022498	hsd-2	protein_coding_gene	intestine	male	No
+WBGene00022762	ZK546.5	protein_coding_gene	head	germ line	No
+WBGene00022789	lron-2	protein_coding_gene	"pharynx, tail"	"intestine, pharynx"	No
+WBGene00022852	ZK1127.5	protein_coding_gene	"intestine, rectal gland cell"	"body wall muscle cell, germ line, somatic gonad precursor"	No
+WBGene00077563	peel-1	protein_coding_gene	spermatocyte	"amphid sheath cell, male"	No
+WBGene00077712	nipi-4	protein_coding_gene	hypodermis	somatic gonad precursor	No
+WBGene00004795	sid-1	protein_coding_gene	"Cell, germ line, pharynx"	"germ line, germline precursor cell, gon_male_dtc anterior, gon_male_dtc posterior, Z1.p, Z4.a"	Fluorescence poorly described
+WBGene00003517	nac-1	protein_coding_gene	alimentary system	hypodermis	?
+WBGene00003573	ncx-8	protein_coding_gene	"intestine, isthmus, metacorpus, pharyngeal muscle cell, procorpus, terminal bulb"	muscle cell	?
