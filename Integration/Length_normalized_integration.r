@@ -14,6 +14,11 @@ library(edgeR)
 
 ## function for integration
 
+### inputs:
+# bulk genes x samples matrix. Colnames should be: cell_type#sampleID, where # is in place of some string to split on. default currently is lower case r
+# single cell pseudobulk genes x samples matrix Colnames should be: cell_type#sampleID, where # is in place of some string to split on. default currently is two underscores
+# pseudocount, no default given, I use 0.1 to reduce distortion of non-zero counts
+
 integrate_geometricMean_biorep <- function(bulk_replicates, single_cell_replicates, pseudocount, bulk_sep = 'r', single_cell_sep = '__'){
 
   common.genes <- intersect(rownames(bulk_replicates), rownames(single_cell_replicates))
@@ -27,8 +32,8 @@ integrate_geometricMean_biorep <- function(bulk_replicates, single_cell_replicat
   index_list_sc <- numeric()
   index_list_bulk <- numeric()
   for(g in unique(bulk_cell_types)){
-    rep_totals <- c(sum(bulk_cell_types==g), sum(cells_bio_rep==g))
-    rep_min <- min(rep_totals)
+    rep_totals <- c(sum(bulk_cell_types==g), sum(cells_bio_rep==g))### count how many replicates are in each cell type for each data source
+    rep_min <- min(rep_totals) ## select the smaller number, this will be the number of samples in the final integrated matrixes
     #print(g)
     #print(sum(bulk_cell_types==g))
     #print(rep_min)
