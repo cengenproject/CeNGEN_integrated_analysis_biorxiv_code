@@ -49,7 +49,7 @@ integrate_geometricMean_biorep <- function(bulk_replicates, single_cell_replicat
   #print('set indexes')
   bulk_replicates_match <- bulk_replicates[,index_list_bulk]
 
-  single_cell_replicates_match <- single_cell_replicates[,index_list_sc]
+  single_cell_replicates_match <- single_cell_replicates[,index_list_sc] ### normalize the Single Cell data to match the bulk data
   single_cell_replicates_match <- sweep(single_cell_replicates_match, 2, colSums(single_cell_replicates_match, na.rm = T), '/') * colSums(bulk_replicates_match, na.rm = T)
 
   #bulk_replicates_match <- bulk_replicates_match[,order(colnames(bulk_replicates_match))]
