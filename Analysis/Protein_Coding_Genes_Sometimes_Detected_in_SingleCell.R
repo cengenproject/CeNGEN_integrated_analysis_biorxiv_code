@@ -83,6 +83,18 @@ data.frame(prc_contam_cor_max = apply(GeTMM_cor_s_contaminant_prc[rownames(GeTMM
   ggplot() + geom_density(aes(x = prc_contam_cor_max))
 
 
+
+
+#### plot all protein coding genes' correlations, and plot the correlations of the likely non-neuronal genes ----
+rbind(data.frame(. = apply(GeTMM_cor_s_contaminant_prc, 1, max), group = 'Non-Neuronal Genes'), 
+      apply(GeTMM_cor_s_contaminant_prc[intersect(nn_genes, rownames(GeTMM_cor_s_contaminant_prc)),], 1, max) %>% 
+        data.frame(., group = 'all protein coding genes') ) %>%
+  ggplot() + geom_density(aes(x = ., color = group)) +
+  xlim(-0.5,1) +
+  theme_classic(base_size = 20) 
+  
+
+
 ##### see how many non-neuronal genes are excluded by filtering by correlation with contaminants
 nn_genes <- intersect(rownames(likely_non_neuronal_gt), common.genes)
 nn_genes_low <- intersect(nn_genes, all_potential_unexpr) 
