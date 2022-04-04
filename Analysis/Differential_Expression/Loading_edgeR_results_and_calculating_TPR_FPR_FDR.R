@@ -595,6 +595,44 @@ mean(consensus_p.hmp_accuracy)
 mean(harmonized_p.hmp_accuracy)
 
 
+### Matthew's Correlation Coefficient calculation
+
+mcc <- function(tp, tn, gt){
+  total_true <- sum(gt==1)
+  total_false <- sum(gt==0)
+  
+  tp <- tp
+  tn <- tn
+  fn <- total_true - tp
+  fp <- total_false - tn
+  
+  numer <- (tp * tn) - (fp * fn)
+  denom <- sqrt((tp + fp)* (tp + fn) * (tn + fp) * (tn + fn)) 
+  
+  return(numer/denom)
+}
+
+raw_pValue_MCC <- sapply(names(auc_TPR_raw_PValue_directional), function(contrast){
+  tp <- raw_PValue.hmp_total_TP[[contrast]]
+  tn <- raw_PValue_total_TN[[contrast]]
+  gt <- contrast_gt_list[[contrast]]
+  mcc(tp, tn, gt)
+})
+
+consensus_MCC <- sapply(names(auc_TPR_consensus_p.hmp_directional), function(contrast){
+  tp <- consensus_p.hmp_total_TP[[contrast]]
+  tn <- consensus_p.hmp_total_TN[[contrast]]
+  gt <- contrast_gt_list[[contrast]]
+  mcc(tp, tn, gt)
+})
+
+
+
+summary(raw_pValue_MCC)
+summary(consensus_MCC)
+
+
+
 
 ### calculate F1 scores
 
