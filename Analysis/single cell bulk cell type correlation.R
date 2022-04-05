@@ -7,54 +7,8 @@ liberal <- cengenDataSC::cengen_sc_1_bulk
 medium <- cengenDataSC::cengen_sc_2_bulk
 conservative <- cengenDataSC::cengen_sc_3_bulk
 strict <- cengenDataSC::cengen_sc_4_bulk
+strict[strict > 0] = 1
 
-
-
-genes_expressed_sc_1_list <- sapply(colnames(liberal), function(cell){
-  rownames(liberal[liberal[,cell] > 0,])
-})
-liberal_bulk_detection <- sapply(colnames(aggr_raw_GeTMM), function(cell){
-  samples_cell_type <- str_split_fixed(colnames(bulk_raw_GeTMM), 'r', 2)[,1]
-  common.genes <- intersect(rownames(bulk_raw_GeTMM), genes_expressed_sc_1_list[[cell]])
-  
-  bulk <- bulk_raw_GeTMM[common.genes, samples_cell_type %in% c(cell)]
-  
-  bulk_bin <- bulk > 5
-  bulk_bin_ave <- rowMeans(bulk_bin)
-  return(sum(bulk_bin_ave > 0.65)/length(common.genes))
-  
-  
-})
-genes_expressed_sc_2_list <- sapply(colnames(medium), function(cell){
-  rownames(medium[medium[,cell] > 0,])
-})
-medium_bulk_detection <- sapply(colnames(aggr_raw_GeTMM), function(cell){
-  samples_cell_type <- str_split_fixed(colnames(bulk_raw_GeTMM), 'r', 2)[,1]
-  common.genes <- intersect(rownames(bulk_raw_GeTMM), genes_expressed_sc_2_list[[cell]])
-
-  bulk <- bulk_raw_GeTMM[common.genes, samples_cell_type %in% c(cell)]
-  
-  bulk_bin <- bulk > 5
-  bulk_bin_ave <- rowMeans(bulk_bin)
-  return(sum(bulk_bin_ave > 0.65)/length(common.genes))
-
-
-})
-genes_expressed_sc_3_list <- sapply(colnames(conservative), function(cell){
-  rownames(conservative[conservative[,cell] > 0,])
-})
-conservative_bulk_detection <- sapply(colnames(aggr_raw_GeTMM), function(cell){
-  samples_cell_type <- str_split_fixed(colnames(bulk_raw_GeTMM), 'r', 2)[,1]
-  common.genes <- intersect(rownames(bulk_raw_GeTMM), genes_expressed_sc_3_list[[cell]])
-  
-  bulk <- bulk_raw_GeTMM[common.genes, samples_cell_type %in% c(cell)]
-  
-  bulk_bin <- bulk > 5
-  bulk_bin_ave <- rowMeans(bulk_bin)
-  return(sum(bulk_bin_ave > 0.65)/length(common.genes))
-  
-  
-})
 genes_expressed_sc_4_list <- sapply(colnames(strict), function(cell){
   rownames(strict[strict[,cell] > 0,])
 })
@@ -70,23 +24,6 @@ strict_bulk_detection <- sapply(colnames(aggr_raw_GeTMM), function(cell){
   
   
 })
-
-data.frame(row.names = names(liberal_bulk_detection),
-           cell = names(liberal_bulk_detection),
-           #liberal = liberal_bulk_detection,
-           medium = medium_bulk_detection,
-           #conseravtive = conservative_bulk_detection,
-           strict = strict_bulk_detection) %>% 
-  reshape::melt(.) %>%
-  ggplot() + geom_col(aes(x = cell, y = value, fill = variable), position = 'dodge')
-
-
-
-
-genes_expressed_sc_2_list <- sapply(colnames(medium), function(cell){
-  rownames(medium[medium[,cell] > 0,])
-})
-
 
 
 
