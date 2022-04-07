@@ -29,11 +29,9 @@ bulk_data_deseqdata
 
 bulk_data_VST <- DESeq2::vst(bulk_data_deseqdata)
 
-DESeq2::plotPCA(bulk_data_VST)
-plt <- DESeq2::plotPCA(bulk_data_VST, returnData = T)
 
-plt$modality <- sapply(colnames(bulk_data), function(v){
-  cell = str_split_fixed(v, 'r', 2)[,1]
+plt <- DESeq2::plotPCA(bulk_data_VST, returnData = T)
+plt$modality <- sapply(plt$group, function(cell){
   modality = neuron_meta.df[cell, 'Modality_collapsed']
 })
 
