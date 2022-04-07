@@ -2,8 +2,18 @@
 
 ### libraries ----
 library(ggplot2)
+library(ggrastr)
 library(edgeR)
+library(bayestestR)
 
+## function ----
+
+get_fpr <- function(expression, truth, threshold, na.rm = TRUE){
+  # False Positive Rate
+  # FPR = FP/(FP+TN) = FP/N
+  bin <- expression >= threshold
+  return(sum(bin * (!truth))/sum(!(truth)))
+}
 
 #### load ground truth matrix ----
 nonNeuronal_GT <- read.csv('bulk_nonNeuronal_ground_truth_040122.csv', row.names = 1)
