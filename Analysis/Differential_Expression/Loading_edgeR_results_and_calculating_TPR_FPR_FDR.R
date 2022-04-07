@@ -45,37 +45,31 @@ get_fdr <- function(expression, truth, threshold, na.rm = TRUE){
 }
 
 
-
-
-setwd('~/Bioinformatics/bsn5/')
-
-
-
 ### load data
 
-bulk_data <- read.table('bsn9_CeNGEN_bulk_data.tsv')
+bulk_data <- read.table('Barrett_et_al_2022_CeNGEN_bulk_RNAseq_data.tsv')
 
-CeNGEN_TPM <- read.table('~/Bioinformatics/single_cell_data/CeNGEN_TPM_080421.tsv')
+CeNGEN_TPM <- read.table('CeNGEN_TPM_080421.tsv')
 
 
 ### load ground truth dataset ----
 
-bulk_gt <- read.csv('../Ground_truth_genesets/bulk_all_ground_truth_042021.csv', row.names = 1)
+bulk_gt <- read.csv('bulk_neuronal_ground_truth_042021.csv', row.names = 1)
 
 
-nn_genes <- read.table('../Ground_truth_genesets/simpleMine_non_neuronal_genes_101521.tsv', sep = '\t',
-                       header = T)
-nn_genes <- nn_genes[nn_genes$Putative.match.=='Yes',]
-nn_genes <- nn_genes$WormBase.Gene.ID
-nn_genes <- intersect(nn_genes, common.genes)
+nonNeuronal_GT <- read.csv('bulk_nonNeuronal_ground_truth_040122.csv', header = 1)
+rownames(nonNeuronal_GT)
 
 
+ws281 <- data.frame(wb_load_gene_ids('281'))
+rownames(ws281) <- ws281$gene_id
 
 ## subset to common genes
 
 common.genes <- intersect(rownames(bulk_data), rownames(CeNGEN_TPM))
 common.genes <- intersect(common.genes, ws281[ws281$biotype=='protein_coding_gene', 'gene_id'])
 
+nn_genes <- intersect(nn_genes, common.genes)
 
 
 ### using the bulk dataset, generate a list of possible cell-cell pairs
@@ -127,7 +121,7 @@ matched_contrast <- data.frame( contrast = names(contrast_list_match),
 
 
 
-##  for each contrast, grab those two columns from the ground truth, in the order specified by the contrast
+##  for each contrast, grab those two columns from the ground truth, in the order specified by the contrast ----
 
 
 contrast_gt_list <- sapply(matched_contrast$contrast, function(contrast){
@@ -149,20 +143,15 @@ names(contrast_gt_list) <- matched_contrast$contrast
 
 
 
-### load the edgeR tables
+### load the edgeR tables, examples provided here, but the files are too large to share on github ----
 
-raw_qlfs <- readRDS('~/Bioinformatics/bsn9/raw_qlf_tables_bsn9_112821.rds')
+raw_qlfs <- readRDS('~/Bioinformatics/bsn9/raw_qlf_tables_bsn9_112821.rds') ### uncorrected bulk differential expression tables
 
-many_harmonized <- readRDS('~/Bioinformatics/bsn9/many_harmonized_edgeR_113021.rds')
+many_harmonized <- readRDS('~/Bioinformatics/bsn9/many_harmonized_edgeR_113021.rds') #### integrated differential expression tables
 
 dim(many_harmonized[[1]])
 dim(many_integrations[[1]])
 
-length(common.genes)
-names(many_harmonized)
-for(g in names(many_harmonized)){
-  rownames(many_harmonized[[g]]) <- rownames(many_integrations[[1]])
-}
 
 ## For each cell-cell pair, in each direction, calculate the True Positive Rate, False Positive Rate, and the False Discovery Rate
 
@@ -208,48 +197,7 @@ auc_TPR_consensus_p.hmp_directional <- pbsapply(matched_contrast$contrast, funct
     else{NA}
   }
 })
-auc_TPR_harmonized_p.hmp_directional <- pbsapply(matched_contrast$contrast, function(contrast){
-  
-  match <- matched_contrast[matched_contrast$contrast == contrast, 'match']
-  
-  if(contrast %in% names(many_harmonized)){
-    testing_harmony <- many_harmonized[[contrast]]
-    
-    testing_gt1 <- contrast_gt_list[[contrast]]
-    
-    
-    testing_harmony_true <- -log10(testing_harmony[names(testing_gt1),1])
-    names(testing_harmony_true) <- names(testing_gt1)
-    
-    testing_harmony_true[testing_harmony[names(testing_gt1), 2] < 2] <- NA
-    
-    TPR <- get_tpr(testing_harmony_true, testing_gt1, threshold = -log10(0.05))
-    
-    return(TPR)
-    
-  }
-  else{
-    if(match %in%  names(many_harmonized)){
-      
-      testing_harmony <- many_harmonized[[match]]
-      
-      testing_gt1 <- contrast_gt_list[[contrast]]
-      
-      
-      testing_harmony_true <- -log10(testing_harmony[names(testing_gt1),1])
-      names(testing_harmony_true) <- names(testing_gt1)
-      
-      testing_harmony_true[testing_harmony[names(testing_gt1), 2] > (-2)] <- NA
-      
-      
-      TPR <- get_tpr(testing_harmony_true, testing_gt1, threshold = -log10(0.05))
-      
-      return(TPR)
-      
-    }
-    else{NA}
-  }
-})
+
 auc_TPR_raw_PValue_directional <- pbsapply(matched_contrast$contrast, function(contrast){
   
   match <- matched_contrast[matched_contrast$contrast == contrast, 'match']
@@ -292,7 +240,6 @@ auc_TPR_raw_PValue_directional <- pbsapply(matched_contrast$contrast, function(c
   }
 })
 auc_TPR_consensus_p.hmp_directional <- na.omit(auc_TPR_consensus_p.hmp_directional)
-#auc_TPR_harmonized_p.hmp_directional <- na.omit(auc_TPR_harmonized_p.hmp_directional)
 auc_TPR_raw_PValue_directional <- na.omit(auc_TPR_raw_PValue_directional)
 
 auc_FPR_consensus_p.hmp_directional <- pbsapply(matched_contrast$contrast, function(contrast){
@@ -337,50 +284,7 @@ auc_FPR_consensus_p.hmp_directional <- pbsapply(matched_contrast$contrast, funct
     else{NA}
   }
 })
-auc_FPR_harmonized_p.hmp_directional <- pbsapply(matched_contrast$contrast, function(contrast){
-  
-  match <- matched_contrast[matched_contrast$contrast == contrast, 'match']
-  
-  if(contrast %in% names(many_harmonized)){
-    testing_harmony <- many_harmonized[[contrast]]
-    
-    testing_gt1 <- contrast_gt_list[[contrast]]
-    testing_gt1[names(testing_gt1)] <- 0
-    
-    
-    testing_harmony_true <- -log10(testing_harmony[names(testing_gt1),1])
-    names(testing_harmony_true) <- names(testing_gt1)
-    
-    testing_harmony_true[testing_harmony[names(testing_gt1), 2] < 2] <- NA
-    
-    FPR <- get_fpr(testing_harmony_true, testing_gt1, threshold = -log10(0.05))
-    
-    return(FPR)
-    
-  }
-  else{
-    if(match %in%  names(many_harmonized)){
-      
-      testing_harmony <- many_harmonized[[match]]
-      
-      testing_gt1 <- contrast_gt_list[[contrast]]
-      testing_gt1[names(testing_gt1)] <- 0
-      
-      
-      testing_harmony_true <- -log10(testing_harmony[names(testing_gt1),1])
-      names(testing_harmony_true) <- names(testing_gt1)
-      
-      testing_harmony_true[testing_harmony[names(testing_gt1), 2] > (-2)] <- NA
-      
-      
-      FPR <- get_fpr(testing_harmony_true, testing_gt1, threshold = -log10(0.05))
-      
-      return(FPR)
-      
-    }
-    else{NA}
-  }
-})
+
 auc_FPR_raw_PValue_directional <- pbsapply(matched_contrast$contrast, function(contrast){
   
   match <- matched_contrast[matched_contrast$contrast == contrast, 'match']
@@ -423,7 +327,6 @@ auc_FPR_raw_PValue_directional <- pbsapply(matched_contrast$contrast, function(c
   }
 })
 auc_FPR_consensus_p.hmp_directional <- na.omit(auc_FPR_consensus_p.hmp_directional)
-#auc_FPR_harmonized_p.hmp_directional <- na.omit(auc_FPR_harmonized_p.hmp_directional)
 auc_FPR_raw_PValue_directional <- na.omit(auc_FPR_raw_PValue_directional)
 
 auc_FDR_consensus_p.hmp_directional <- pbsapply(matched_contrast$contrast, function(contrast){
@@ -468,48 +371,7 @@ auc_FDR_consensus_p.hmp_directional <- pbsapply(matched_contrast$contrast, funct
     else{NA}
   }
 })
-auc_FDR_harmonized_p.hmp_directional <- pbsapply(matched_contrast$contrast, function(contrast){
-  
-  match <- matched_contrast[matched_contrast$contrast == contrast, 'match']
-  
-  if(contrast %in% names(many_harmonized)){
-    testing_harmony <- many_harmonized[[contrast]]
-    
-    testing_gt1 <- contrast_gt_list[[contrast]]
-    
-    testing_harmony_true <- -log10(testing_harmony[names(testing_gt1),1])
-    names(testing_harmony_true) <- names(testing_gt1)
-    
-    testing_harmony_true[testing_harmony[names(testing_gt1), 2] < 2] <- NA
-    
-    FDR <- get_fdr(testing_harmony_true, testing_gt1, threshold = -log10(0.05))
-    
-    return(FDR)
-    
-    
-  }
-  else{
-    if(match %in%  names(many_harmonized)){
-      
-      testing_harmony <- many_harmonized[[match]]
-      
-      testing_gt1 <- contrast_gt_list[[contrast]]
-      
-      
-      testing_harmony_true <- -log10(testing_harmony[names(testing_gt1),1])
-      names(testing_harmony_true) <- names(testing_gt1)
-      
-      testing_harmony_true[testing_harmony[names(testing_gt1), 2] > (-2)] <- NA
-      
-      
-      FDR <- get_fdr(testing_harmony_true, testing_gt1, threshold = -log10(0.05))
-      
-      return(FDR)
-      
-    }
-    else{NA}
-  }
-})
+
 auc_FDR_raw_PValue_directional <- pbsapply(matched_contrast$contrast, function(contrast){
   
   match <- matched_contrast[matched_contrast$contrast == contrast, 'match']
@@ -552,7 +414,6 @@ auc_FDR_raw_PValue_directional <- pbsapply(matched_contrast$contrast, function(c
   }
 })
 auc_FDR_consensus_p.hmp_directional <- na.omit(auc_FDR_consensus_p.hmp_directional)
-#auc_FDR_harmonized_p.hmp_directional <- na.omit(auc_FDR_harmonized_p.hmp_directional)
 auc_FDR_raw_PValue_directional <- na.omit(auc_FDR_raw_PValue_directional)
 
 auc_FDR_raw_PValue_directional
@@ -590,9 +451,8 @@ consensus_p.hmp_accuracy[is.na(consensus_p.hmp_accuracy)] <- 0
 raw_PValue_accuracy <- (raw_PValue.hmp_total_TP + raw_PValue_total_TN)/totals_per_contrast[names(raw_PValue.hmp_total_TP)]
 raw_PValue_accuracy[is.na(raw_PValue_accuracy)] <- 0
 
-mean(raw_PValue_accuracy)
-mean(consensus_p.hmp_accuracy)
-mean(harmonized_p.hmp_accuracy)
+summary(raw_PValue_accuracy)
+summary(consensus_p.hmp_accuracy)
 
 
 ### Matthew's Correlation Coefficient calculation
@@ -633,18 +493,3 @@ summary(consensus_MCC)
 
 
 
-
-### calculate F1 scores
-
-consensus_p.hmp_f1 <- ((2 * auc_TPR_consensus_p.hmp_directional * (1-auc_FDR_consensus_p.hmp_directional))/
-                         (auc_TPR_consensus_p.hmp_directional + (1-auc_FDR_consensus_p.hmp_directional)))
-consensus_p.hmp_f1[is.na(consensus_p.hmp_f1)] <- 0
-
-raw_PValue_f1 <- ((2 * auc_TPR_raw_PValue_directional * (1-auc_FDR_raw_PValue_directional))/
-                    (auc_TPR_raw_PValue_directional + (1-auc_FDR_raw_PValue_directional)))
-raw_PValue_f1[is.na(raw_PValue_f1)] <- 0
-
-
-mean(consensus_p.hmp_f1)
-mean(harmonized_p.hmp_f1)
-mean(raw_PValue_f1)
