@@ -16,18 +16,25 @@ Figure 2B: TPR_FPR_FDR_calculation.R
 Supp Figure 2: Normalization effects on non-neuronal FPR.R
 
 Figure 3A-B: Loading_edgeR_results_and_calculating_TPR_FPR_FDR.R then Accuracy_graphs.R
+
 Figure 3C-D: Loading_edgeR_results_and_calculating_TPR_FPR_FDR.R then MCC_graphs.R
 
 Supp Figure 3C: Loading_edgeR_results_and_calculating_TPR_FPR_FDR.R then Recall_TPR_graphs.R
+
 Supp Figure 3D: Loading_edgeR_results_and_calculating_TPR_FPR_FDR.R then Neuron_specificity_graphs.R
+
 Supp Figure 3E: Loading_edgeR_results_and_calculating_TPR_FPR_FDR.R then Accuracy_graphs.R
+
 Supp Figure 3F: Loading_edgeR_results_and_calculating_TPR_FPR_FDR.R then MCC_graphs.R
+
 Supp Figure 3G: Loading_edgeR_results_and_calculating_TPR_FPR_FDR.R then nonNeuronal_Specificity_graphs.R
 
 Figure 4A-C: Protein_Coding_Genes_Sometimes_Detected_in_SingleCell.R
+
 Figure 4E: Protein_Coding_Genes_Never_Detected_in_SingleCell.R
 
 Supp Figure 4A-B: NNLS_bootstrap_estimates.r
+
 Supp Figure 4C-D: Protein_Coding_Genes_Sometimes_Detected_in_SingleCell
 
 Figure 5 & Supp Figure 5: ncRNA_calling.r
