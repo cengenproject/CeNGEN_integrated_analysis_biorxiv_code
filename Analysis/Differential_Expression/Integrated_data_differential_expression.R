@@ -77,25 +77,11 @@ cell_labels <- str_split_fixed(colnames(CeNGEN_aggr_bio_reps), '__',2)[,1]
 ref_genes <- data.frame(wbData::wb_load_gene_ids('281'))
 rownames(ref_genes) <- ref_genes$gene_id
 
-### load in bulk data ----
-bulk_data <- read.table('Barrett_et_al_2022_CeNGEN_bulk_RNAseq_data.tsv')
-
-
 ref_genes_protein_coding <- ref_genes[ref_genes$biotype == 'protein_coding_gene',]
 
 
-
-CeNGEN_aggr_bio_reps <- CeNGEN_aggr_bio_reps[,order(colnames(CeNGEN_aggr_bio_reps))]
-
-cell_labels <- str_split_fixed(colnames(CeNGEN_aggr_bio_reps), '__',2)[,1]
-CeNGEN_aggr_bio_reps_DD.temp <- CeNGEN_aggr_bio_reps[,cell_labels == 'VD_DD']
-CeNGEN_aggr_bio_reps_VD.temp <- CeNGEN_aggr_bio_reps[,cell_labels == 'VD_DD']
-colnames(CeNGEN_aggr_bio_reps_DD.temp) <- paste0('DD__', str_split_fixed(colnames(CeNGEN_aggr_bio_reps_DD.temp), '__', 2)[,2])
-colnames(CeNGEN_aggr_bio_reps_VD.temp) <- paste0('VD__', str_split_fixed(colnames(CeNGEN_aggr_bio_reps_VD.temp), '__', 2)[,2])
-
-CeNGEN_aggr_bio_reps.test <- cbind(CeNGEN_aggr_bio_reps, CeNGEN_aggr_bio_reps_DD.temp, CeNGEN_aggr_bio_reps_VD.temp)
-CeNGEN_aggr_bio_reps <- CeNGEN_aggr_bio_reps[,order(colnames(CeNGEN_aggr_bio_reps))]
-cell_labels <- str_split_fixed(colnames(CeNGEN_aggr_bio_reps), '__',2)[,1]
+### load in bulk data ----
+bulk_data <- read.table('Barrett_et_al_2022_CeNGEN_bulk_RNAseq_data.tsv')
 
 bulk_cell_types <- str_split_fixed(colnames(bulk_data), 'r', 2)[,1]
 
@@ -124,7 +110,7 @@ colnames(design_no_int) <- cell_types_wReps
 rownames(design_no_int) <- samples_wReps
 
 
-
+### set up neuron-neuron contrasts
 contrasts_names <- factor()
 cells_shrink <- cell_types_wReps
 for(f in cells_shrink){
@@ -142,7 +128,9 @@ contrasts_edgeR <- lapply(contrasts_names, function(v){ cont <-
 print('set up contrasts')
 
 
-many_integrations <- pblapply(seq(101,151,1), function(v){
+
+## perform integration 50x
+many_integrations <- pblapply(seq(101,150,1), function(v){
 
   set.seed(v)
 
@@ -170,7 +158,7 @@ contrasts_edgeR <- lapply(contrasts_names, function(v){ cont <-
 
 print('set up contrasts')
 
-
+## make 50 DGElist objects & calculate dispersions ----
 listing <- 1
 many_edgeRs <- pblapply(many_integrations, function(integrated){
 
@@ -220,7 +208,7 @@ contrasts_edgeR <- lapply(contrasts_names, function(v){ cont <-
 
 
 
-
+### fit models ----
 many_fits <- pblapply(many_edgeRs, function(dge){
 
   dge_fit <- glmQLFit(dge, dge$design)
@@ -230,7 +218,7 @@ many_fits <- pblapply(many_edgeRs, function(dge){
 print('calculated fits')
 
 
-
+### harvest the p-values and logFC values
 many_p_values_and_logFCs <- lapply(contrasts_edgeR, function(contrast){
   qlfs_temp <- pblapply(many_fits, function(fit){
     qlf <- glmQLFTest(glmfit=fit, contrast=contrast)
@@ -249,7 +237,24 @@ many_p_values_and_logFCs <- lapply(contrasts_edgeR, function(contrast){
 })
 names(many_p_values_and_logFCs) <- contrasts_edgeR
 
+### merge P-values, and average logFCs, and get consensus scores ----
+many_harmonized <- pblapply(many_p_values_and_logFCs, function(cont){
+  tmp.pval <- cont[[1]]
+  tmp.logfc <- cont[[1]]
+  p.hmp <- apply(tmp.pval, 1, harmonicmeanp::p.hmp)
+  Average_logFC <- apply(tmp.logfc, 1, mean)
+  consensus <- apply(tmp.pval, 1, function(gene){
+    sum(gene < 0.05)
+  })
+  df <- data.frame(row.names = rownames(many_integrations),
+                   p.hmp = p.hmp,
+                   Average_logFC = Average_logFC,
+                   consensus = consensus)
+  return(df)
+
+})
+
 print('done')
 
 
-saveRDS(many_p_values_and_logFCs, 'many_p_values_and_logFCs_5_112821.rds')
+saveRDS(many_harmonized, 'many_harmonized_112821.rds')
