@@ -13,7 +13,6 @@ library(ComplexHeatmap)
 library(nnls)
 
 ### seurat object downloaded from CeNGEN website downloads page, ~0.5 gb disk space, ~ 2gb RAM to open
-sc_object <- readRDS('~/Bioinformatics/single_cell_data/100720_L4_all_cells_Seurat.rds')
 sc_object <- readRDS('100720_L4_all_cells_Seurat.rds')
 
 
@@ -64,7 +63,7 @@ sc_object_cut@active.ident <- as.factor(sc_object_cut$neuron_level)
 markers <- FindAllMarkers(sc_object_cut)
 
 dim(bulk_data)
-bulk_data <- read.table('~/Bioinformatics/bsn5/bsn9_bulk_counts_113021.tsv')
+bulk_data <- read.table('~/Bioinformatics/bsn5/Barrett_et_al_2022_CeNGEN_bulk_RNAseq_data.tsv')
 
 NNLS_30_list_sqrt <- pblapply(seq(101,200,1), function(seed){
   set.seed(seed)
@@ -154,12 +153,27 @@ sc_size <- sc_size[order(names(sc_size))]
 sc_size <- sc_size[-length(sc_size)]
 
 
-tester <- sapply(colnames(bulk_data), function(sample1){
+NNLS_reduce_sqrt <- data.frame(NNLS_reduce_sqrt)
+
+non_neuronal_list <- c("Excretory", "Glia", "Hypodermis", "Intestine", "Muscle_mesoderm", "Pharynx", "Rectal_cells", "Reproductive")
+
+
+
+CeNGEN_TPM <- read.table('CeNGEN_TPM_080421.tsv')
+
+CeNGEN_TPM_cv <- apply(CeNGEN_TPM, 1, function(gene){
+  return(sd(gene)/mean(gene))
+})
+sum(CeNGEN_TPM_cv > 1, na.rm = T)
+
+common.genes <- intersect(rownames(CeNGEN_TPM), rownames(bulk_data))
+
+full_NNLS <- pbsapply(colnames(bulk_data), function(sample1){
   cell <- str_split_fixed(sample1, 'r', 2)[,1]
   cell_types <- c(cell, non_neuronal_list)
-  genes <- intersect(common.genes, names(CeNGEN_12max_arithMean_cv[CeNGEN_12max_arithMean_cv > 1]))
+  genes <- intersect(common.genes, names(CeNGEN_TPM_cv[CeNGEN_TPM_cv > 5]))
   
-  CeNGEN_CPMcut <- CeNGEN_12max_arithMean_CPM.df[common.genes, cell_types]
+  CeNGEN_CPMcut <- CeNGEN_TPM[common.genes, cell_types]
   
   
   
@@ -170,115 +184,18 @@ tester <- sapply(colnames(bulk_data), function(sample1){
   cell_types
   
   nnls(b=sqrt(as.matrix(bulk)), A=sqrt(as.matrix(CeNGEN_CPMcut)))$x
-  
 })
 
-
-
-
-NNLS_reduce_sqrt <- data.frame(NNLS_reduce_sqrt)
-
-data.frame(sc_size = log10(sc_size[str_split_fixed(colnames(NNLS_reduce_sqrt), 'r', 2)[,1]]),
-           Neuron = unlist(NNLS_reduce_sqrt['Neuron',])) %>%
-  ggplot() + 
-  theme_classic(base_size = 20) + 
-  geom_point(aes(x = sc_size, y = Neuron), color = 'black', size = 4) +
-  geom_smooth(aes(x = sc_size, y = Neuron), method = 'lm', se = F) +
-  xlab('Single Cell Cluster Size, Log10') +  ylim(0,1)
-
-data.frame(sc_size = log10(sc_size[str_split_fixed(colnames(full_NNLS), 'r', 2)[,1]]),
-           Neuron = unlist(full_NNLS['Neuron',])) %>%
-  ggplot() + 
-  theme_classic(base_size = 20) + 
-  geom_point(aes(x = sc_size, y = Neuron), color = 'black', size = 4) +
-  geom_smooth(aes(x = sc_size, y = Neuron), method = 'lm', se = F) +
-  xlab('Single Cell Cluster Size, Log10') +  ylim(0,1)
-
-
-sc_size[str_split_fixed(colnames(NNLS_reduce1), 'r', 2)[,1]]
-plot(log10(sc_size[str_split_fixed(colnames(NNLS_reduce), 'r', 2)[,1]]), NNLS_reduce1['Neuron',], ylim = c(0,1))
-plot(log10(sc_size[str_split_fixed(colnames(NNLS_reduce), 'r', 2)[,1]]), full_NNLS['Neuron',], ylim = c(0,1))
-
-plot(sc_size[str_split_fixed(colnames(NNLS_reduce), 'r', 2)[,1]], NNLS_reduce['Neuron',], ylim = c(0,1))
-
-plot(sc_size[str_split_fixed(colnames(NNLS_reduce), 'r', 2)[,1]], full_NNLS['Neuron',])
-
-full_NNLS
-
-non_neuronal_list <- c("Excretory", "Glia", "Hypodermis", "Intestine", "Muscle_mesoderm", "Pharynx", "Rectal_cells", "Reproductive")
-
-
-
-
-tester_log <- sapply(colnames(bulk_data), function(sample1){
-  cell <- str_split_fixed(sample1, 'r', 2)[,1]
-  cell_types <- c(cell, non_neuronal_list)
-  
-  CeNGEN_histNorm_cut <- CeNGEN_500max_arithMean_CPM.df[common.genes, cell_types]
-  
-  bulk <- as.numeric(bulk_data[common.genes, sample1])
-  names(bulk) <- common.genes
-  
-  cell_types
-  
-  nnls(b=log2(1+as.matrix(bulk)), A=log2(1+as.matrix(CeNGEN_histNorm_cut)))$x
-  
-})
-rownames(tester_log) <- c('Neuron', non_neuronal_list)
-tester_log <- sweep(tester_log, 2, colSums(tester_log), '/')
-
-
-tester[,1:10]
-tester_log[,1:10]
-
-
-
-
-
-
-CeNGEN_TPM <- read.table('~/Bioinformatics/single_cell_data/CeNGEN_TPM_080421.tsv')
-
-CeNGEN_TPM_cv <- apply(CeNGEN_TPM, 1, function(gene){
-  return(sd(gene)/mean(gene))
-})
-sum(CeNGEN_TPM_cv > 1, na.rm = T)
-
-common.genes <- intersect(rownames(CeNGEN_TPM), rownames(bulk_data))
-
-full_NNLS <- pbsapply(colnames(bulk_data), function(sample1){
-    cell <- str_split_fixed(sample1, 'r', 2)[,1]
-    cell_types <- c(cell, non_neuronal_list)
-    genes <- intersect(common.genes, names(CeNGEN_TPM_cv[CeNGEN_TPM_cv > 5]))
-    
-    CeNGEN_CPMcut <- CeNGEN_TPM[common.genes, cell_types]
-    
-    
-    
-    
-    bulk <- as.numeric(bulk_data[common.genes, sample1])
-    names(bulk) <- common.genes
-    
-    cell_types
-    
-    nnls(b=sqrt(as.matrix(bulk)), A=sqrt(as.matrix(CeNGEN_CPMcut)))$x
-    })
-  
 full_NNLS
 
 rownames(full_NNLS) <- c('Neuron', non_neuronal_list)
 full_NNLS <- sweep(full_NNLS, 2, colSums(full_NNLS), '/')
-  
+
 
 full_NNLS <- data.frame(full_NNLS)
-full_NNLS$RICr133 <- NULL
-full_NNLS$PVMr122 <- NULL
-full_NNLS$ADFr99 <- NULL
-full_NNLS$M4r117 <- NULL
-full_NNLS$AVKr113 <- NULL
 
 
-
-
+## Figure S4B
 data.frame(sc_size = log10(sc_size[str_split_fixed(colnames(NNLS_reduce_sqrt), 'r', 2)[,1]]),
            Neuron = unlist(full_NNLS['Neuron',])) %>%
   ggplot() + 
@@ -290,6 +207,8 @@ data.frame(sc_size = log10(sc_size[str_split_fixed(colnames(NNLS_reduce_sqrt), '
 ggsave('full_sample_nnls_011822.pdf')
 
 
+
+#Figure S4A
 data.frame(sc_size = log10(sc_size[str_split_fixed(colnames(NNLS_reduce_sqrt), 'r', 2)[,1]]),
            Neuron = unlist(NNLS_reduce_sqrt['Neuron',])) %>%
   ggplot() + 
@@ -302,13 +221,13 @@ ggsave('30_cell_boostrapped_nnls_011822.pdf')
 
 
 full_lm <- lm(Neuron ~ sc_size, data = data.frame(sc_size = log10(sc_size[str_split_fixed(colnames(NNLS_reduce_sqrt), 'r', 2)[,1]]),
-                                       Neuron = unlist(full_NNLS['Neuron',])))
+                                                  Neuron = unlist(full_NNLS['Neuron',])))
 
 full_lm$coefficients
 
 downsampled_lm <- lm(Neuron ~ sc_size, 
                      data = data.frame(sc_size = log10(sc_size[str_split_fixed(colnames(NNLS_reduce_sqrt), 'r', 2)[,1]]),
-                                                         Neuron = unlist(NNLS_reduce_sqrt['Neuron',])))
+                                       Neuron = unlist(NNLS_reduce_sqrt['Neuron',])))
 
 
 summary(full_lm)
