@@ -16,16 +16,16 @@ library(tidyverse)
 library(wbData)
 library(cengenDataSC)
 
-ws277 <- data.frame(wbData::wb_load_gene_ids('277'))
-rownames(ws277) <- ws277$gene_id
+ws281 <- data.frame(wbData::wb_load_gene_ids('281'))
+rownames(ws281) <- ws281$gene_id
 
-protein_coding_genes <- ws277[ws277$biotype=='protein_coding_gene','gene_id']
+protein_coding_genes <- ws281[ws281$biotype=='protein_coding_gene','gene_id']
 
 protein_coding_genes <- intersect(protein_coding_genes, rownames(bulk_raw_GeTMM))
 
 #cengen_sc_2_bulk
 
-sc_gene_thresholds <- readRDS('~/Bioinformatics/single_cell_data//211028_genes_categorized_by_pattern.rds')
+sc_gene_thresholds <- readRDS('~/Bioinformatics/single_cell_data/211028_genes_categorized_by_pattern.rds')
 
 names(sc_gene_thresholds)
 length(sc_gene_thresholds[[1]])
@@ -35,7 +35,6 @@ nondetected_threshold_genes <- intersect(nondetected_threshold_genes, polyA_gene
 non_neuronal_genes <- sc_gene_thresholds[['nonneuronal']]
 
 
-cengen_sc_1_bulk <- cengenDataSC::cengen_sc_1_bulk
 
 
 
@@ -75,7 +74,7 @@ colnames(likely_non_neuronal_gt) <- colnames(aggr_raw_GeTMM)
 
 
 ### exclude genes by correlation with contaminants
-GeTMM_cor_s_contaminant_prc <- GeTMM_cor_s_contaminant[intersect(rownames(GeTMM_cor_s_contaminant), rownames(ws277_prc)),]
+GeTMM_cor_s_contaminant_prc <- GeTMM_cor_s_contaminant[intersect(rownames(GeTMM_cor_s_contaminant), protein_coding_genes),]
 GeTMM_cor_s_contaminant_prc_low <- GeTMM_cor_s_contaminant_prc[apply(GeTMM_cor_s_contaminant_prc, 1, max) < 0.3,]
 dim(GeTMM_cor_s_contaminant_prc_low)
 data.frame(prc_contam_cor_max = apply(GeTMM_cor_s_contaminant_prc[rownames(GeTMM_cor_s_contaminant_prc) %in% 
@@ -85,7 +84,7 @@ data.frame(prc_contam_cor_max = apply(GeTMM_cor_s_contaminant_prc[rownames(GeTMM
 
 
 
-#### plot all protein coding genes' correlations, and plot the correlations of the likely non-neuronal genes ----
+#### plot all protein coding genes' correlations, and plot the correlations of the likely non-neuronal genes Figure 4A----
 rbind(data.frame(. = apply(GeTMM_cor_s_contaminant_prc, 1, max), group = 'Non-Neuronal Genes'), 
       apply(GeTMM_cor_s_contaminant_prc[intersect(nn_genes, rownames(GeTMM_cor_s_contaminant_prc)),], 1, max) %>% 
         data.frame(., group = 'all protein coding genes') ) %>%
@@ -141,20 +140,12 @@ names(GT_thresholded_FDR_L.gene.list) <- colnames(aggr_raw_GeTMM)
 sapply(GT_thresholded_FDR_L.gene.list, length)
 
 
-
 GT_thresholded_FDR_L.df <- data.frame(protein_genes = as.numeric(GT_thresholded_FDR_L),
                                          cells = names(GT_thresholded_FDR_L))
 
-GT_thresholded_FDR_L.gene.list$IL1 %>% clipr::write_clip(.)
 
 
-gene_ <- 'WBGene00010982'
-rbind(aggr_raw_GeTMM[gene_,], CeNGEN_TPM[gene_,colnames(aggr_raw_GeTMM)])
-
-
-
-
-##### bar plot of "new" genes ----
+##### bar plot of "new" genes Figure 4B----
 GT_thresholded_FDR_L.df %>% ggplot(data = ., aes(x = cells, y = protein_genes)) + geom_col() +
   theme_classic(base_size = 20) + theme(axis.text.x = element_text(angle = 45, hjust = 1, face = 'bold')) +
   xlab('Cell Type') + ylab('"New" Genes Detected in Bulk\n(Sometimes Detected in Single Cell)')
@@ -167,21 +158,9 @@ new_genes.vs.size.df <- data.frame(raw_protein_genes = GT_thresholded_FDR_L.df$p
            sc_size = sc_size[GT_thresholded_FDR_L.df$cells])
 
 
-new_genes.vs.size.df %>%
-  ggplot() +
-  geom_point(aes(x = log10(sc_size), raw_protein_genes), size = 5) +
-  geom_smooth(aes(x = log10(sc_size), raw_protein_genes), method = 'lm') 
-
-
-
 new_genes_decay <- nls((raw_protein_genes) ~ m + (M-m)*exp(-sc_size/alpha), data = new_genes.vs.size.df,
                        list(M = 350, alpha = 100, m = 18))
 
-
-#new_genes_decay <- nls(log10(raw_protein_genes) ~ M*exp(-log10(sc_size)/alpha) + m, data = new_genes.vs.size.df,
-#                       list(M = 6, alpha = 3, m = -50))
-
-new_genes_decay
 
 new_genes.df <- cbind(new_genes.vs.size.df, fit=predict(new_genes_decay))
 
@@ -196,11 +175,6 @@ ggplot(new_genes.df) +
   ylab("'new' protein coding genes found in bulk")
 
 names(GT_thresholded_FDR_0.15.gene.list) <- colnames(aggr_raw_GeTMM)
-
-
-
-
-
 
 
 
